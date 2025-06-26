@@ -179,7 +179,7 @@
 
   <sec:Security_Requirements>
     
-    <base-pp id="bpp-mdf" name="Peripheral Sharing Device" product="Device" short="PSD" version="2.0">
+    <base-pp id="bpp-psd" name="Peripheral Sharing Device" product="Device" short="PSD" version="5.0">
       <git>
         <url><comment>Need to add URL once created</comment></url>
         <branch>release-5.0</branch>
