@@ -196,7 +196,7 @@
       </sec-func-req-dir>
       
       <modified-sfrs>
-        <section title="User Data Protection (FDP)">
+        <sec:mod_fdp title="User Data Protection (FDP)">
           <f-component cc-id="fdp_apc_ext.1" name="Active PSD Connections">
             <consistency-reationale>
               This refined SFR accounts for analog and electrical signals which are not listed
@@ -219,6 +219,10 @@
                 If computer interface supports right and left audio, or audio and microphone bias,
                 then all those supported signals should comply with the above SFRs.
               </note>
+              <con-toe>
+                This refined SFR accounts for analog and electrical signals which are not listed
+                in the PSD PP.
+              </con-toe>
               <aactivity>
                 Because of the specific nature of the audio input data that transits the TOE, there
                 are additional EAs for this SFR.
@@ -375,18 +379,17 @@
                     </test>
                   </testlist>
                 </Test>
-              </aactivity>
+              </aactivity>              
             </f-element>
           </f-component>
-        </section>
-        
-        <section title="Peripheral Device Connection" id="modsfr-psd-fdp-pdc-ext-1">
-          There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
-          peripheral device connections (see Appendix E) that are associated with this SFR.
-          <con-toe>
+          
+          <f-component cc-id="fdp_pdc_ext.1" name="Peripheral Device Connection">
+            There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
+            peripheral device connections (see Appendix E) that are associated with this SFR.
+          <consistency-rational>
             This SFR is not modified, but it references Appendix E which is modified in this
             PP‐Module to apply to audio input devices which are not listed in the PSD PP.
-          </con-toe>
+          </consistency-rational>
           <aactivity>
             <Isolation/>
             <TSS>
@@ -433,7 +436,8 @@
               </testlist>
             </Tests>
           </aactivity>
-        </section>
+          </f-component>         
+        </sec:mod_fdp>
       </modified-sfrs>
       
       <additional-sfrs/>
