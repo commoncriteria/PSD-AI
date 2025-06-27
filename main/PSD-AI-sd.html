@@ -292,7 +292,7 @@
       Technical Community members, with representatives from industry, government 
       agencies, Common Criteria Test Laboratories, and members of academia.
       </p></div><h1>Table of Contents</h1><div id="toc"><a href="#introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#scope" style="text-indent:10px">1.1<span>Technology Area and Scope of Supporting Document</span></a><a href="#structure" style="text-indent:10px">1.2<span>Structure of the Document</span></a><a href="#glossary" style="text-indent:10px">1.3<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.3.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.3.2<span>Technical Terms</span></a><a href="#sfr" style="text-indent:0px">2<span>Evaluation Activities for SFRs</span></a><a href="#aa-bpp-psd" style="text-indent:10px">2.1<span>Peripheral Sharing Device</span></a><a href="#qq-sfrs-bpp-psd-Modified" style="text-indent:20px">2.1.1<span>Modified SFRs
-        </span></a><a href="#_sec_10" style="text-indent:30px">2.1.1.1<span>User Data Protection (FDP)</span></a><a href="#modsfr-psd-fdp-pdc-ext-1" style="text-indent:30px">2.1.1.2<span>Peripheral Device Connection</span></a><a href="#man-sfrs" style="text-indent:10px">2.2<span>TOE SFR Evaluation Activities</span></a><a href="#_sec_10" style="text-indent:20px">2.2.1<span>User Data Protection (FDP)</span></a><a href="#FDP" style="text-indent:20px">2.2.2<span>User Data Protection (FDP)</span></a><a href="#opt-sfrs" style="text-indent:10px">2.3<span>Evaluation Activities for Optional SFRs</span></a><a href="#sel-sfrs" style="text-indent:10px">2.4<span>Evaluation Activities for Selection-Based SFRs</span></a><a href="#obj-sfrs" style="text-indent:10px">2.5<span>Evaluation Activities for Objective SFRs</span></a><a href="#impl-sfrs-" style="text-indent:10px">2.6<span>Evaluation Activities for Implementation-dependent SFRs</span></a><a href="#sar_aas" style="text-indent:0px">3<span>Evaluation Activities for SARs</span></a><a href="#sup-info" style="text-indent:0px">4<span>Required Supplementary Information</span></a><a href="#biblio" style="text-indent:0px">Appendix A - <span>References</span></a></div><h1 id="introduction" class="indexable" data-level="0">1 Introduction</h1><h2 id="scope" class="indexable" data-level="1">1.1 Technology Area and Scope of Supporting Document</h2><p>The scope of the PP-Module for Audio Input Devices is
+        </span></a><a href="#mod_fdp" style="text-indent:30px">2.1.1.1<span>User Data Protection (FDP)</span></a><a href="#man-sfrs" style="text-indent:10px">2.2<span>TOE SFR Evaluation Activities</span></a><a href="#mod_fdp" style="text-indent:20px">2.2.1<span>User Data Protection (FDP)</span></a><a href="#FDP" style="text-indent:20px">2.2.2<span>User Data Protection (FDP)</span></a><a href="#opt-sfrs" style="text-indent:10px">2.3<span>Evaluation Activities for Optional SFRs</span></a><a href="#sel-sfrs" style="text-indent:10px">2.4<span>Evaluation Activities for Selection-Based SFRs</span></a><a href="#obj-sfrs" style="text-indent:10px">2.5<span>Evaluation Activities for Objective SFRs</span></a><a href="#impl-sfrs-" style="text-indent:10px">2.6<span>Evaluation Activities for Implementation-dependent SFRs</span></a><a href="#sar_aas" style="text-indent:0px">3<span>Evaluation Activities for SARs</span></a><a href="#sup-info" style="text-indent:0px">4<span>Required Supplementary Information</span></a><a href="#biblio" style="text-indent:0px">Appendix A - <span>References</span></a></div><h1 id="introduction" class="indexable" data-level="0">1 Introduction</h1><h2 id="scope" class="indexable" data-level="1">1.1 Technology Area and Scope of Supporting Document</h2><p>The scope of the PP-Module for Audio Input Devices is
     to describe the security functionality of 
     
     products in terms of 
@@ -414,7 +414,7 @@ The following sections list Common Criteria and technology terms used in this do
       to a PP-Configuration that includes the PSD PP.
      <h3 class="indexable" data-level="2" id="qq-sfrs-bpp-psd-Modified">2.1.1 Modified SFRs
         </h3>
-        <h3 class="indexable" data-level="3" id="_sec_10">2.1.1.1 User Data Protection (FDP)</h3><div class="comp" id=""><h4>FDP_APC_EXT.1 Active PSD Connections</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_APC_EXT.1</div>
+        <h3 class="indexable" data-level="3" id="mod_fdp">2.1.1.1 User Data Protection (FDP)</h3><div class="comp" id=""><h4>FDP_APC_EXT.1 Active PSD Connections</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_APC_EXT.1</div>
                 Because of the specific nature of the audio input data that transits the TOE, there
                 are additional EAs for this SFR.
                 
@@ -573,10 +573,55 @@ The following sections list Common Criteria and technology terms used in this do
                   SFR. This includes the possibility of both administratively configured TOE settings and any
                   peripherals/connectors that are included with the TOE that cause data flows to behave differently if
                   peripherals are connected through them.
-                </div></div></span></div>
-        
-        <h3 class="indexable" data-level="3" id="modsfr-psd-fdp-pdc-ext-1">2.1.1.2 Peripheral Device Connection</h3>
-      <h2 class="indexable" data-level="1" id="man-sfrs">2.2 TOE SFR Evaluation Activities</h2><h2 class="indexable" data-level="2" id="_sec_10">2.2.1 User Data Protection (FDP)</h2><div class="comp" id=""><h4>FDP_APC_EXT.1 Active PSD Connections</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_APC_EXT.1</div>
+                </div></div></span></div><div class="comp" id=""><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_PDC_EXT.1</div>
+            
+            
+            
+            
+          <div class="eacategory">TSS</div><div class="ea"><div class="ea">
+              The evaluator shall verify that the TSS describes the peripherals that are supported by the TOE to ensure
+              that it does not support any peripherals other than audio input devices.
+            </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+              The evaluator shall verify that the operational user guidance describes devices authorized for use with the
+              TOE in accordance with the Peripheral Device Connection Policy.
+            </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+              <span class="testlist-"><ul>
+                <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_PDC_EXT.1:1</a>:
+      
+                  The evaluator shall verify that the TOE ports properly reject unauthorized devices and devices
+                  with unauthorized protocols as per the Peripheral Device Connection Policy.<br/><br/>
+                  For this test, verify device rejection through TOE user indication in accordance with the operational user
+                  guidance, an immediate cessation of traffic following device detection or enumeration, or incompatibility
+                  of the device interface with the peripheral interface.<br/><br/>
+                  Repeat this test for each of the following devices: digital microphone, keyboard, mouse, any device using
+                  digital video protocol, any device using USB protocol.<ol>
+                    <li>Ensure the TOE is powered off.</li>
+                    <li>Attempt to connect an unauthorized device to the TOE peripheral interface.</li>
+                    <li>Power on the TOE. Verify the device is rejected.</li>
+                    <li>Ensure the unauthorized device is disconnected, then attempt to connect it to the TOE peripheral
+                  interface again.</li>
+                    <li>Verify the device is rejected.</li>
+                  </ol>
+                </li>
+                <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:2</a>:
+      
+                  The evaluator shall verify that the TOE ports do not reject authorized devices and devices with
+                  authorized protocols as per the Peripheral Device Connection Policy.<ol>
+                    <li>Ensure the TOE is powered off.</li>
+                    <li>Connect the authorized device to the TOE peripheral interface.</li>
+                    <li>Power on the TOE. Verify the TOE user indication described in the operational user guidance is not
+                  present.</li>
+                    <li>Speak into the microphone. Verify that the connected computer picks up the audio by recording
+                  the audio or viewing the microphone audio level.</li>
+                    <li>Disconnect the microphone, then reconnect it to the TOE peripheral interface.</li>
+                    <li>Verify the TOE user indication described in the operational user guidance is not present.</li>
+                    <li>Speak into the microphone. Verify that the connected computer picks up the audio by recording
+                  the audio or viewing the microphone audio level.</li>
+                  </ol>                   
+                </li>
+              </ul></span>
+            </div></div></span></div>
+      <h2 class="indexable" data-level="1" id="man-sfrs">2.2 TOE SFR Evaluation Activities</h2><h2 class="indexable" data-level="2" id="mod_fdp">2.2.1 User Data Protection (FDP)</h2><div class="comp" id=""><h4>FDP_APC_EXT.1 Active PSD Connections</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_APC_EXT.1</div>
                 Because of the specific nature of the audio input data that transits the TOE, there
                 are additional EAs for this SFR.
                 
@@ -735,7 +780,54 @@ The following sections list Common Criteria and technology terms used in this do
                   SFR. This includes the possibility of both administratively configured TOE settings and any
                   peripherals/connectors that are included with the TOE that cause data flows to behave differently if
                   peripherals are connected through them.
-                </div></div></span></div><h2 class="indexable" data-level="2" id="FDP">2.2.2 User Data Protection (FDP)</h2><div class="comp" id="FDP-PDC-EXT-2-AI"><h4>FDP_PDC_EXT.2/AI Authorized Devices (Analog Audio Input)</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_PDC_EXT.2/AI</div>
+                </div></div></span></div><div class="comp" id=""><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_PDC_EXT.1</div>
+            
+            
+            
+            
+          <div class="eacategory">TSS</div><div class="ea"><div class="ea">
+              The evaluator shall verify that the TSS describes the peripherals that are supported by the TOE to ensure
+              that it does not support any peripherals other than audio input devices.
+            </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+              The evaluator shall verify that the operational user guidance describes devices authorized for use with the
+              TOE in accordance with the Peripheral Device Connection Policy.
+            </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+              <span class="testlist-"><ul>
+                <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_PDC_EXT.1:1</a>:
+      
+                  The evaluator shall verify that the TOE ports properly reject unauthorized devices and devices
+                  with unauthorized protocols as per the Peripheral Device Connection Policy.<br/><br/>
+                  For this test, verify device rejection through TOE user indication in accordance with the operational user
+                  guidance, an immediate cessation of traffic following device detection or enumeration, or incompatibility
+                  of the device interface with the peripheral interface.<br/><br/>
+                  Repeat this test for each of the following devices: digital microphone, keyboard, mouse, any device using
+                  digital video protocol, any device using USB protocol.<ol>
+                    <li>Ensure the TOE is powered off.</li>
+                    <li>Attempt to connect an unauthorized device to the TOE peripheral interface.</li>
+                    <li>Power on the TOE. Verify the device is rejected.</li>
+                    <li>Ensure the unauthorized device is disconnected, then attempt to connect it to the TOE peripheral
+                  interface again.</li>
+                    <li>Verify the device is rejected.</li>
+                  </ol>
+                </li>
+                <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:2</a>:
+      
+                  The evaluator shall verify that the TOE ports do not reject authorized devices and devices with
+                  authorized protocols as per the Peripheral Device Connection Policy.<ol>
+                    <li>Ensure the TOE is powered off.</li>
+                    <li>Connect the authorized device to the TOE peripheral interface.</li>
+                    <li>Power on the TOE. Verify the TOE user indication described in the operational user guidance is not
+                  present.</li>
+                    <li>Speak into the microphone. Verify that the connected computer picks up the audio by recording
+                  the audio or viewing the microphone audio level.</li>
+                    <li>Disconnect the microphone, then reconnect it to the TOE peripheral interface.</li>
+                    <li>Verify the TOE user indication described in the operational user guidance is not present.</li>
+                    <li>Speak into the microphone. Verify that the connected computer picks up the audio by recording
+                  the audio or viewing the microphone audio level.</li>
+                  </ol>                   
+                </li>
+              </ul></span>
+            </div></div></span></div><h2 class="indexable" data-level="2" id="FDP">2.2.2 User Data Protection (FDP)</h2><div class="comp" id="FDP-PDC-EXT-2-AI"><h4>FDP_PDC_EXT.2/AI Authorized Devices (Analog Audio Input)</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_PDC_EXT.2/AI</div>
               
               
               
