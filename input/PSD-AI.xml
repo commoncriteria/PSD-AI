@@ -253,7 +253,7 @@
                   The evaluator shall then perform the following tests:
                   <testlist>
                     <test>
-                      <h:b>AI: Positive and Negative Analog Audio Input Switching Functionality and Leakages</h:b><h:br/><h:br/>
+                      <h:b>Positive and Negative Analog Audio Input Switching Functionality and Leakages</h:b><h:br/><h:br/>
                       AI verifies that the switching functionality works as expected and checks for leakage to non-selected
                       computers when the audio source is connected to the peripheral interface. In the following steps, the
                       evaluator shall confirm that an analog audio signal traversing the TOE from an analog audio source to
@@ -311,7 +311,7 @@
                       </h:ol>
                     </test>
                     <test>
-                      <h:b>AI: Computer Isolation</h:b><h:br/><h:br/>
+                      <h:b>Computer Isolation</h:b><h:br/><h:br/>
                       [Conditional: This test is performed if “switching can be initiated only through express user action” is
                       selected for FDP_SWI_EXT.1.1]<h:br/><h:br/>
                       AI verifies that audio data cannot flow between computer interfaces whether or not any computer
