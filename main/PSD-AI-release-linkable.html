@@ -856,48 +856,55 @@ The following sections list Common Criteria and technology terms used in this do
                 
                 
                 
+              <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
+                  There are no <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> EAs for this component beyond what the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> requires<a id="period_96" href="#period_96">. </a>                </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+                  If the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to route analog audio input signals is configurable, the evaluator shall verify that
+                  the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to behave in the manner specified by the
+                  <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_97" href="#period_97">. </a>This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings and any
+                  peripherals/connectors that are included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that cause data flows to behave differently if
+                  peripherals are connected through them<a id="period_98" href="#period_98">. </a>                </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                   The evaluator shall then perform the following tests:
                   <span class="testlist-"><ul>
                     <li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FDP_APC_EXT.1:1</a>:
       
                       <b>Positive and Negative Analog Audio Input Switching Functionality and Leakages</b><br><br>
                       AI verifies that the switching functionality works as expected and checks for leakage to non-selected
-                      computers when the audio source is connected to the peripheral interface<a id="period_96" href="#period_96">. </a>In the following steps, the
+                      computers when the audio source is connected to the peripheral interface<a id="period_99" href="#period_99">. </a>In the following steps, the
                       evaluator shall confirm that an analog audio signal traversing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> from an analog audio source to
-                      one user&#8208;selected connected computer does not leak to the non&#8208;selected computers&#8217; analog audio interfaces<a id="period_97" href="#period_97">. </a><br><br>
+                      one user&#8208;selected connected computer does not leak to the non&#8208;selected computers&#8217; analog audio interfaces<a id="period_100" href="#period_100">. </a><br><br>
                       <b>Part 1a: Peripheral to Selected Computer Flow</b><ol>
-                        <li>Connect the microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Input peripheral interface<a id="period_98" href="#period_98">. </a></li>
+                        <li>Connect the microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Input peripheral interface<a id="period_101" href="#period_101">. </a></li>
                         <li>Connect a computer to each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Input computer interface, and configure the
-                            computers&#8217; ports for microphone input<a id="period_99" href="#period_99">. </a></li>
-                        <li>For each connected computer, select its interface and perform steps 4&#8208;5<a id="period_100" href="#period_100">. </a></li>
-                        <li>Speak into the microphone<a id="period_101" href="#period_101">. </a>Verify that the connected computer picks up the audio by recording
-                            the audio or viewing the microphone audio level<a id="period_102" href="#period_102">. </a></li>
+                            computers&#8217; ports for microphone input<a id="period_102" href="#period_102">. </a></li>
+                        <li>For each connected computer, select its interface and perform steps 4&#8208;5<a id="period_103" href="#period_103">. </a></li>
+                        <li>Speak into the microphone<a id="period_104" href="#period_104">. </a>Verify that the connected computer picks up the audio by recording
+                            the audio or viewing the microphone audio level<a id="period_105" href="#period_105">. </a></li>
                         <li>[Conditional: This step is performed if &#8220;the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports only one connected computer&#8221; is
-                            selected for FDP_SWI_EXT.1.1] Speak into the microphone<a id="period_103" href="#period_103">. </a>Verify that each non&#8208;selected
+                            selected for FDP_SWI_EXT.1.1] Speak into the microphone<a id="period_106" href="#period_106">. </a>Verify that each non&#8208;selected
                             connected computer does not pick up the audio by recording the audio or viewing the microphone
-                            audio level<a id="period_104" href="#period_104">. </a></li>
-                        <li>Power down the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_105" href="#period_105">. </a></li>
-                        <li>For each connected computer, select its interface and perform step 8<a id="period_106" href="#period_106">. </a></li>
-                        <li>Speak into the microphone<a id="period_107" href="#period_107">. </a>Verify that the connected computer does not pick up the audio by
-                            recording the audio or viewing the microphone audio level<a id="period_108" href="#period_108">. </a></li>
+                            audio level<a id="period_107" href="#period_107">. </a></li>
+                        <li>Power down the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_108" href="#period_108">. </a></li>
+                        <li>For each connected computer, select its interface and perform step 8<a id="period_109" href="#period_109">. </a></li>
+                        <li>Speak into the microphone<a id="period_110" href="#period_110">. </a>Verify that the connected computer does not pick up the audio by
+                            recording the audio or viewing the microphone audio level<a id="period_111" href="#period_111">. </a></li>
                       </ol>
                       <b>Part 1b: Peripheral to Non-Selected Computer Flow and Frequency Verification</b><ol>
                         <li>Power on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and connect a tone generator to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio input peripheral interface and
-                            set it to maximum line output level<a id="period_109" href="#period_109">. </a></li>
-                        <li>Connect amplified speakers to each of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interfaces and set the volume to 0%<a id="period_110" href="#period_110">. </a></li>
-                        <li>For each connected computer, select its interface and perform steps 4&#8208;6<a id="period_111" href="#period_111">. </a></li>
+                            set it to maximum line output level<a id="period_112" href="#period_112">. </a></li>
+                        <li>Connect amplified speakers to each of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interfaces and set the volume to 0%<a id="period_113" href="#period_113">. </a></li>
+                        <li>For each connected computer, select its interface and perform steps 4&#8208;6<a id="period_114" href="#period_114">. </a></li>
                         <li>Use the tone generator to generate a sine wave audio tone for each of the following frequencies:
                             100 Hz, 250 Hz, 500 Hz, 1 kHz, 2 kHz, 4 kHz, 8 kHz, 10 kHz, 12 kHz, 15 kHz, 20 kHz, 30 kHz, 40 kHz,
-                            50 kHz, and 60 kHz<a id="period_112" href="#period_112">. </a>Gradually turn up the volume on each set of speakers until the tone can be
-                            heard or the volume reaches 100%<a id="period_113" href="#period_113">. </a>Reset the volume to 0% after testing each channel<a id="period_114" href="#period_114">. </a>Note:
-                            Depending on shielding the speakers might pick up air&#8208;conditioning (50 or 60 Hz)<a id="period_115" href="#period_115">. </a>This is not
-                            considered a failure<a id="period_116" href="#period_116">. </a></li>
+                            50 kHz, and 60 kHz<a id="period_115" href="#period_115">. </a>Gradually turn up the volume on each set of speakers until the tone can be
+                            heard or the volume reaches 100%<a id="period_116" href="#period_116">. </a>Reset the volume to 0% after testing each channel<a id="period_117" href="#period_117">. </a>Note:
+                            Depending on shielding the speakers might pick up air&#8208;conditioning (50 or 60 Hz)<a id="period_118" href="#period_118">. </a>This is not
+                            considered a failure<a id="period_119" href="#period_119">. </a></li>
                         <li>Verify that the injected test tone is heard only on the speakers connected to the selected
-                            computer<a id="period_117" href="#period_117">. </a></li>
+                            computer<a id="period_120" href="#period_120">. </a></li>
                         <li>Replace the speakers attached to a computer interface with an oscilloscope and set to measure
-                            the peak&#8208;to&#8208;peak voltage<a id="period_118" href="#period_118">. </a></li>
-                        <li>Attach computers to the other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interfaces<a id="period_119" href="#period_119">. </a></li>
-                        <li>Select a computer interface other than the one to which the oscilloscope is connected<a id="period_120" href="#period_120">. </a></li>
+                            the peak&#8208;to&#8208;peak voltage<a id="period_121" href="#period_121">. </a></li>
+                        <li>Attach computers to the other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interfaces<a id="period_122" href="#period_122">. </a></li>
+                        <li>Select a computer interface other than the one to which the oscilloscope is connected<a id="period_123" href="#period_123">. </a></li>
                         <li>Replace the tone generator with an external audio signal generator and perform step 10 with the
                             signal generator set to the following settings:<ul>
                               <li>Pure sine wave around the average voltage of half output (positive signal only), with the
@@ -906,15 +913,15 @@ The following sections list Common Criteria and technology terms used in this do
                             </ul></li>
                         <li>Set the signal generator to generate 100 Hz, 250 Hz, 500 Hz, 1 kHz, 2 kHz, 4 kHz, 8 kHz, 10 kHz, 12
                           kHz, 15 kHz, 20 kHz, 30 kHz, 40 kHz, 50 kHz, and 60 kHz and use the oscilloscope to detect the
-                          leaked signal<a id="period_121" href="#period_121">. </a>Verify the detected signal is 11.2 mV (or well below noise level)<a id="period_122" href="#period_122">. </a>This level of signal
-                          ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended audio frequency range<a id="period_123" href="#period_123">. </a></li><br><br>
+                          leaked signal<a id="period_124" href="#period_124">. </a>Verify the detected signal is 11.2 mV (or well below noise level)<a id="period_125" href="#period_125">. </a>This level of signal
+                          ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended audio frequency range<a id="period_126" href="#period_126">. </a></li><br><br>
                         [Conditional: The below steps are performed if switching through express user action is selected for
                         FDP_SWI_EXT.1.1]<br><br>
-                        <li>Repeat steps 8&#8208;10 with each of the other computer interfaces selected<a id="period_124" href="#period_124">. </a></li>
+                        <li>Repeat steps 8&#8208;10 with each of the other computer interfaces selected<a id="period_127" href="#period_127">. </a></li>
                         <li>Repeat steps 8&#8208;11 with the oscilloscope attached to a different computer interface until all
-                            computer interfaces have been tested<a id="period_125" href="#period_125">. </a></li>
+                            computer interfaces have been tested<a id="period_128" href="#period_128">. </a></li>
                         <li>Power down the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, repeat steps 8&#8208;12, verifying that the results are the same as previously
-                            tested in those steps<a id="period_126" href="#period_126">. </a></li>
+                            tested in those steps<a id="period_129" href="#period_129">. </a></li>
                       </ol>
                     </li>
                     <li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FDP_APC_EXT.1:2</a>:
@@ -923,77 +930,70 @@ The following sections list Common Criteria and technology terms used in this do
                       [Conditional: This test is performed if &#8220;switching can be initiated only through express user action&#8221; is
                       selected for FDP_SWI_EXT.1.1]<br><br>
                       AI verifies that audio data cannot flow between computer interfaces whether or not any computer
-                      interfaces are selected<a id="period_127" href="#period_127">. </a>It intends to test every combination of audio source, selected computer interface,
-                      and oscilloscope location for all computer interfaces<a id="period_128" href="#period_128">. </a><br><br>
+                      interfaces are selected<a id="period_130" href="#period_130">. </a>It intends to test every combination of audio source, selected computer interface,
+                      and oscilloscope location for all computer interfaces<a id="period_131" href="#period_131">. </a><br><br>
                       Note: When the signal inserted on one <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interface audio input is 2.00 V peak&#8208;to&#8208;peak sine
                       wave, the maximum allowed output signal voltage measured at another <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interface is
-                      therefore 11.2mV (or well below noise level)<a id="period_129" href="#period_129">. </a>The extended audio frequency range is 1Hz to 60 kHz<a id="period_130" href="#period_130">. </a>                      Negative swing is measured when the generated audio signal average voltage is 0V<a id="period_131" href="#period_131">. </a><br><br>
+                      therefore 11.2mV (or well below noise level)<a id="period_132" href="#period_132">. </a>The extended audio frequency range is 1Hz to 60 kHz<a id="period_133" href="#period_133">. </a>                      Negative swing is measured when the generated audio signal average voltage is 0V<a id="period_134" href="#period_134">. </a><br><br>
                       In the following steps the evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not allow significant leakage between
                       Audio In computer interfaces:<ol>
-                        <li>Disconnect the tone generator from the Analog Audio Input peripheral interface<a id="period_132" href="#period_132">. </a>Leave the
-                        receptacle empty<a id="period_133" href="#period_133">. </a></li>
-                        <li>For each computer interface, perform steps 3&#8208;6<a id="period_134" href="#period_134">. </a></li>
-                        <li>Connect the tone generator to the selected first computer interface and ensure it is not selected<a id="period_135" href="#period_135">. </a></li>
-                        <li>Connect amplified speakers to each remaining computer interface<a id="period_136" href="#period_136">. </a>Set the volume of the speakers
-                        to 0%<a id="period_137" href="#period_137">. </a></li>
+                        <li>Disconnect the tone generator from the Analog Audio Input peripheral interface<a id="period_135" href="#period_135">. </a>Leave the
+                        receptacle empty<a id="period_136" href="#period_136">. </a></li>
+                        <li>For each computer interface, perform steps 3&#8208;6<a id="period_137" href="#period_137">. </a></li>
+                        <li>Connect the tone generator to the selected first computer interface and ensure it is not selected<a id="period_138" href="#period_138">. </a></li>
+                        <li>Connect amplified speakers to each remaining computer interface<a id="period_139" href="#period_139">. </a>Set the volume of the speakers
+                        to 0%<a id="period_140" href="#period_140">. </a></li>
                         <li>Use the tone generator to generate a sine wave audio tone for each of the following frequencies:
                         100 Hz, 250 Hz, 500 Hz, 1 kHz, 2 kHz, 4 kHz, 8 kHz, 10 kHz, 12 kHz, 15 kHz, 20 kHz, 30 kHz, 40 kHz,
-                        50 kHz, and 60 kHz<a id="period_138" href="#period_138">. </a>Gradually turn up the volume on each set of speakers until the tone can be
-                        heard or the volume reaches 100%<a id="period_139" href="#period_139">. </a>Reset the volume to 0% after testing each channel<a id="period_140" href="#period_140">. </a>Note:
-                        Depending on shielding the speakers might pick up AC (50 or 60 Hz)<a id="period_141" href="#period_141">. </a>This is not considered a
-                        failure<a id="period_142" href="#period_142">. </a></li>
-                        <li>Verify that a tone is not heard<a id="period_143" href="#period_143">. </a></li>
+                        50 kHz, and 60 kHz<a id="period_141" href="#period_141">. </a>Gradually turn up the volume on each set of speakers until the tone can be
+                        heard or the volume reaches 100%<a id="period_142" href="#period_142">. </a>Reset the volume to 0% after testing each channel<a id="period_143" href="#period_143">. </a>Note:
+                        Depending on shielding the speakers might pick up AC (50 or 60 Hz)<a id="period_144" href="#period_144">. </a>This is not considered a
+                        failure<a id="period_145" href="#period_145">. </a></li>
+                        <li>Verify that a tone is not heard<a id="period_146" href="#period_146">. </a></li>
                         <li>Attach an external audio signal generator to a computer interface and set to pure sine wave
-                        around the average voltage of half output (positive signal only)<a id="period_144" href="#period_144">. </a>Set the output signal to 2.00V
-                        peak&#8208;to&#8208;peak<a id="period_145" href="#period_145">. </a>(The oscilloscope may be used to calibrate the signal.)</li>
-                        <li>Attach the oscilloscope to the next computer interface<a id="period_146" href="#period_146">. </a></li>
-                        <li>Select the interface with the signal generator<a id="period_147" href="#period_147">. </a></li>
+                        around the average voltage of half output (positive signal only)<a id="period_147" href="#period_147">. </a>Set the output signal to 2.00V
+                        peak&#8208;to&#8208;peak<a id="period_148" href="#period_148">. </a>(The oscilloscope may be used to calibrate the signal.)</li>
+                        <li>Attach the oscilloscope to the next computer interface<a id="period_149" href="#period_149">. </a></li>
+                        <li>Select the interface with the signal generator<a id="period_150" href="#period_150">. </a></li>
                         <li>Set the signal generator to generate 100 Hz, 250 Hz, 500 Hz, 1 kHz, 2 kHz, 4 kHz, 8 kHz, 10 kHz, 12
                         kHz, 15 kHz, 20 kHz, 30 kHz, 40 kHz, 50 kHz, and 60 kHz and use the oscilloscope to detect the
-                        leaked signal<a id="period_148" href="#period_148">. </a>Verify the detected signal is 11.2mV (or well below noise level)<a id="period_149" href="#period_149">. </a>This level of signal
-                        ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended audio frequency range<a id="period_150" href="#period_150">. </a></li>
-                        <li>Repeat step 10 with the audio generator set to signal average to 0V (negative swing)<a id="period_151" href="#period_151">. </a>Verify the
-                        detected signal is 11.2mV (or well below noise level)<a id="period_152" href="#period_152">. </a>This level of signal ensures signal attenuation
-                        of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended audio frequency range<a id="period_153" href="#period_153">. </a></li>
+                        leaked signal<a id="period_151" href="#period_151">. </a>Verify the detected signal is 11.2mV (or well below noise level)<a id="period_152" href="#period_152">. </a>This level of signal
+                        ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended audio frequency range<a id="period_153" href="#period_153">. </a></li>
+                        <li>Repeat step 10 with the audio generator set to signal average to 0V (negative swing)<a id="period_154" href="#period_154">. </a>Verify the
+                        detected signal is 11.2mV (or well below noise level)<a id="period_155" href="#period_155">. </a>This level of signal ensures signal attenuation
+                        of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended audio frequency range<a id="period_156" href="#period_156">. </a></li>
                         <li>Disconnect the power to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and repeat Steps 10&#8208;11 without the assignment of specific
-                        computers<a id="period_154" href="#period_154">. </a>Verify the attenuation results are the same as for the powered on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_155" href="#period_155">. </a></li>
-                        <li>Power up the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> again<a id="period_156" href="#period_156">. </a>Repeat steps 10&#8208;12 for each selected computer interface<a id="period_157" href="#period_157">. </a>(This tests
+                        computers<a id="period_157" href="#period_157">. </a>Verify the attenuation results are the same as for the powered on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_158" href="#period_158">. </a></li>
+                        <li>Power up the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> again<a id="period_159" href="#period_159">. </a>Repeat steps 10&#8208;12 for each selected computer interface<a id="period_160" href="#period_160">. </a>(This tests
                         both for leakage between selected and non&#8208;selected computer interfaces, and between pairs of
-                        non&#8208;selected computer interfaces)<a id="period_158" href="#period_158">. </a></li>
+                        non&#8208;selected computer interfaces)<a id="period_161" href="#period_161">. </a></li>
                         <li>Repeat steps 10&#8208;13 with the oscilloscope connected to each computer interface not connected
-                        to the signal generator<a id="period_159" href="#period_159">. </a></li>
+                        to the signal generator<a id="period_162" href="#period_162">. </a></li>
                         <li>Repeat steps 10-14 with the signal generator connected to each of the
-                          other computer interfaces<a id="period_160" href="#period_160">. </a></li></ol>
+                          other computer interfaces<a id="period_163" href="#period_163">. </a></li></ol>
                     </li>
                     <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>:
       
                       <b>Behavior of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in Failure State and Powered-Off Mode</b><br><br>
                       Test 3 verifies that analog audio data cannot traverse the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
-                      in a failure state or powered-off<a id="period_161" href="#period_161">. </a><br><br>
+                      in a failure state or powered-off<a id="period_164" href="#period_164">. </a><br><br>
                       The evaluator shall confirm that an analog audio signal does not traverse the
                       <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is in a failure state:<ol>
-                        <li>Power off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_162" href="#period_162">. </a></li>
-                        <li>Connect a tone generator to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_163" href="#period_163">. </a></li>
-                        <li>Connect amplified speakers to each of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Audio In computer interfaces<a id="period_164" href="#period_164">. </a></li>
+                        <li>Power off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_165" href="#period_165">. </a></li>
+                        <li>Connect a tone generator to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_166" href="#period_166">. </a></li>
+                        <li>Connect amplified speakers to each of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Audio In computer interfaces<a id="period_167" href="#period_167">. </a></li>
                         <li>Perform steps 5 and 6 while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off and while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on and entered
-                        into a failure state<a id="period_165" href="#period_165">. </a></li>
+                        into a failure state<a id="period_168" href="#period_168">. </a></li>
                         <li>Use the tone generator to generate a sine wave audio tone for each of the following frequencies:
                         100 Hz, 250 Hz, 500 Hz, 1 kHz, 2 kHz, 4 kHz, 8 kHz, 10 kHz, 12 kHz, 15 kHz, 20 kHz, 30 kHz, 40 kHz,
-                        50 kHz, and 60 kHz<a id="period_166" href="#period_166">. </a>Gradually turn up the volume on each set of speakers until the tone can be
-                        heard or the volume reaches 100%<a id="period_167" href="#period_167">. </a>Reset the volume to 0% after testing each channel<a id="period_168" href="#period_168">. </a>Note:
-                        Depending on shielding the speakers might pick up AC (50 or 60 Hz)<a id="period_169" href="#period_169">. </a>This is not considered a
-                        failure<a id="period_170" href="#period_170">. </a></li>
-                        <li>Verify that a tone is not heard<a id="period_171" href="#period_171">. </a></li></ol>
+                        50 kHz, and 60 kHz<a id="period_169" href="#period_169">. </a>Gradually turn up the volume on each set of speakers until the tone can be
+                        heard or the volume reaches 100%<a id="period_170" href="#period_170">. </a>Reset the volume to 0% after testing each channel<a id="period_171" href="#period_171">. </a>Note:
+                        Depending on shielding the speakers might pick up AC (50 or 60 Hz)<a id="period_172" href="#period_172">. </a>This is not considered a
+                        failure<a id="period_173" href="#period_173">. </a></li>
+                        <li>Verify that a tone is not heard<a id="period_174" href="#period_174">. </a></li></ol>
                     </li>
                   </ul></span>
-                
-              <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
-                  There are no <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> EAs for this component beyond what the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> requires<a id="period_172" href="#period_172">. </a>                </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-                  If the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to route analog audio input signals is configurable, the evaluator shall verify that
-                  the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to behave in the manner specified by the
-                  <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_173" href="#period_173">. </a>This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings and any
-                  peripherals/connectors that are included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that cause data flows to behave differently if
-                  peripherals are connected through them<a id="period_174" href="#period_174">. </a>                </div></div></div></div></div>
+                </div></div></div></div></div>
           
           <div class="comp" id="FDP_PDC_EXT.1"><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4>
             There is no modification to this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_175" href="#period_175">. </a>However, there are additions to the supported
