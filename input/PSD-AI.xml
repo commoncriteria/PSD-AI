@@ -249,7 +249,7 @@
                   peripherals/connectors that are included with the TOE that cause data flows to behave differently if
                   peripherals are connected through them.
                 </Guidance>
-                <Test>
+                <Tests>
                   The evaluator shall then perform the following tests:
                   <testlist>
                     <test>
@@ -378,7 +378,7 @@
                         <h:li>Verify that a tone is not heard.</h:li></h:ol>
                     </test>
                   </testlist>
-                </Test>
+                </Tests>
               </aactivity>              
             </f-element>
           </f-component>
