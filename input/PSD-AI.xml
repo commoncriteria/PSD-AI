@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../transforms/pp2html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="..\transforms\module2html.xsl"?>
+<?xml-model href="../transforms/schemas/CCModule.rng" type="application/xml"?>
 
-<PP xmlns="https://niap-ccevs.org/cc/v1"
+<Module
+    name="Audio Input Devices"
+    xmlns="https://niap-ccevs.org/cc/v1"
+    xmlns:h="http://www.w3.org/1999/xhtml"
     xmlns:sec="https://niap-ccevs.org/cc/v1/section"
-    xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes">  
+    target-product="Audio Input Device"
+    target-products="Audio Input Devices"
+    boilerplate="yes"
+    short="AI">     
   <!-- <inline-comment color='green'>Initial PSD-AI Template on 5/8.</inline-comment> -->
   <!-- <inline-comment color='blue' linebreak='yes'> Hello World QQQQ </inline-comment> -->
  
   <PPReference>
-    <ReferenceTable>
-      <PPTitle>PP-Module for Audio Input Devices</PPTitle>
+    <ReferenceTable>     
+      
       <PPVersion>2.0</PPVersion>
-      <PPAuthor>National Information Assurance Partnership</PPAuthor>
+      <PPAuthor>National Information Assurance Partnership</PPAuthor>      
       <PPPubDate>2025-07-11</PPPubDate>
       <Keywords>PSD, AI</Keywords>      
     </ReferenceTable>
@@ -25,9 +32,11 @@
     </entry>
   </RevisionHistory>
   <RevisionHistory>
-    <version>2.0</version>
-    <date>2025-07-11</date>
-    <subject>Updates for CC:2022</subject>
+    <entry>
+      <version>2.0</version>
+      <date>2025-07-11</date>
+      <subject>Updates for CC:2022</subject>
+    </entry>    
   </RevisionHistory>
 
   <sec:Introduction>
@@ -129,33 +138,34 @@
     </CClaimsInfo>
   </section>
   
-  <sec:spd title="Security Problem Description">
-    The security problem is described in terms
-    of the threats that the OS is expected to address, assumptions about the
-    operational environment, and any organizational security policies that the OS
-    is expected to enforce.<h:br/><h:br/>
-    Note that as a PP‐Module of the PSD PP, all threats, assumptions, and Organizational Security Policies
-    (OSPs) defined in the PSD PP will also apply to the TOE unless otherwise specified.
-    <sec:Threats>
+  <sec:Security_Problem_Definition>  
+    The security problem is described in terms of the threats that the OS is expected to address, assumptions about the
+    operational environment, and any organizational security policies that the OS is expected to enforce.<h:br/><h:br/>
+    Note that as a PP‐Module of the PSD PP, all threats, assumptions, and Organizational Security Policies (OSPs) defined
+    in the PSD PP will also apply to the TOE unless otherwise specified.
+    
+    <sec:Threats>      
       This PP‐Module defines no additional threats beyond those defined in the PSD PP.<h:br/><h:br/>
       The SFRs defined in this PP‐Module are intended to mitigate the T.DATA_LEAK and T.SIGNAL_LEAK
       threats defined in the PSD PP. Specifically, this PP‐Module must ensure that analog audio input data
       intended for one connected computer cannot leak to another connected computer. This also requires
       that any data from one connected computer cannot reach another connected computer by way of the
       PSD.
-    </sec:Threats>
+      <threats/>
+    </sec:Threats>        
     
-    <section title="Assumptions" id="assumptions">
+    <sec:Assumptions>
       This PP‐Module defines no additional assumptions beyond those defined in the PSD PP.
-    </section>
+      <assumptions/>
+    </sec:Assumptions>
     
-    <sec:Organizational_Security_Polcies>
+    <sec:Organizational_Security_Policies>
       <OSPs/>
-    </sec:Organizational_Security_Polcies>
-  </sec:spd>
+    </sec:Organizational_Security_Policies>
+  </sec:Security_Problem_Definition>  
 
   <sec:Security_Objectives>
-    <section title="Security Objectives for the TOE" id="SecurityObjectivesTOE">
+    <sec:Security_Objectives_for_the_TOE>
       Because this PP‐Module does not define any additional threats or organizational security policies beyond
       what is defined by the PSD PP, there are no additional security objectives for the TOE to satisfy.<h:br/><h:br/>
       A TOE that conforms to this PP‐Module must address O.COMPUTER_INTERFACE_ISOLATION,
@@ -163,28 +173,27 @@
       analog audio input peripherals.<h:br/><h:br/>
       In addition to the SFRs in the PSD PP, these objectives are addressed by the refined FDP_APC_EXT.1 and
       FDP_PDC_EXT.1, and FDP_PDC_EXT.2/AI and FDP_UDF_EXT.1/AI as defined in this PP‐Module.
-    </section>    
+      <SOs/>
+    </sec:Security_Objectives_for_the_TOE>    
     
-    <section title="Security Objectives for the Operational Environment" id="SecurityObjectivesTOEorEnvironment">
+    <sec:Security_Objectives_for_the_Operational_Environment>
       Because this PP‐Module does not define any additional assumptions or organizational security policies
       beyond what is defined by the PSD PP, there are no additional security objectives for the Operational
       Environment to satisfy.
-      </section>
+      </sec:Security_Objectives_for_the_Operational_Environment>
     
-    <section title="Security Objectives Rationale" id="SOR">
-      Because this PP‐Module does not define any additional security objectives, there is no additional rationale
-      beyond what is provided by the PSD PP.
-    </section>
+    <sec:Security_Objectives_Rationale/>
   </sec:Security_Objectives>
-
+  
   <sec:Security_Requirements>
-    
+    <comment>Need to add URLs once created</comment>
     <base-pp id="bpp-psd" name="Peripheral Sharing Device" product="Device" short="PSD" version="5.0">
+      
       <git>
-        <url><comment>Need to add URL once created</comment></url>
+        <url>https://github.com/commoncriteria/ai</url>
         <branch>release-5.0</branch>
       </git>
-      <url><comment>Need to add URL once created</comment></url>
+      <url>https://github.com/commoncriteria/psd</url>
       
       <sec-func-req-dir>
         When a TOE claims compliance to this PP‐Module, it is necessary to make claims in the PSD PP
@@ -195,19 +204,20 @@
         below are to be included in a conformant ST unmodified from their definition in the PSD PP.
       </sec-func-req-dir>
       
-      <modified-sfrs>
+      <modified-sfrs>       
+        
         <sec:mod_fdp title="User Data Protection (FDP)">
           <f-component cc-id="fdp_apc_ext.1" name="Active PSD Connections">
-            <consistency-reationale>
+            <consistency-rationale>
               This refined SFR accounts for analog and electrical signals which are not listed
               in the PSD PP.
-            </consistency-reationale>
-            <f-element id="fdp-apc-ext.1e1">
+            </consistency-rationale>
+            <f-element id="fdp-apc-ext-1e1">
             <title> The TSF shall route user data only to <h:s>or from</h:s> the interfaces selected by the
               user. 
             </title>
             </f-element>
-            <f-element id="fdp-apc-ext.1e2">
+            <f-element id="fdp-apc-ext-1e2">
               <title>The TSF shall ensure that no data <h:b>or electrical signals</h:b>flow between connected computers whether the
                 TOE is powered on or powered off.
               </title>
@@ -219,14 +229,22 @@
                 If computer interface supports right and left audio, or audio and microphone bias,
                 then all those supported signals should comply with the above SFRs.
               </note>
-              <con-toe>
-                This refined SFR accounts for analog and electrical signals which are not listed
-                in the PSD PP.
-              </con-toe>
+              
               <aactivity>
                 Because of the specific nature of the audio input data that transits the TOE, there
                 are additional EAs for this SFR.
-                <Isolation>
+                
+                <TSS>
+                  There are no TSS EAs for this component beyond what the PSD PP requires.
+                </TSS>
+                <Guidance>
+                  If the ability of the TOE to route analog audio input signals is configurable, the evaluator shall verify that
+                  the operational guidance describes how to configure the TSF to behave in the manner specified by the
+                  SFR. This includes the possibility of both administratively configured TOE settings and any
+                  peripherals/connectors that are included with the TOE that cause data flows to behave differently if
+                  peripherals are connected through them.
+                </Guidance>
+                <CustomEA name="Isolation">
                   The evaluator shall examine the Isolation Documentation to determine that it describes the logic under
                   which the TSF permits audio flows from a connected audio input peripheral to a connected computer
                   interface.<h:br/><h:br/>
@@ -238,17 +256,7 @@
                   sine wave at the extended audio frequency range, including negative swing signal.<h:br/><h:br/>
                   The evaluator shall examine the Isolation Documentation to determine that it describes how the TOE
                   prevents the audio input signal from traversing the TOE while the TOE is powered off.
-                </Isolation>
-                <TSS>
-                  There are no TSS EAs for this component beyond what the PSD PP requires.
-                </TSS>
-                <Guidance>
-                  If the ability of the TOE to route analog audio input signals is configurable, the evaluator shall verify that
-                  the operational guidance describes how to configure the TSF to behave in the manner specified by the
-                  SFR. This includes the possibility of both administratively configured TOE settings and any
-                  peripherals/connectors that are included with the TOE that cause data flows to behave differently if
-                  peripherals are connected through them.
-                </Guidance>
+                </CustomEA>
                 <Tests>
                   The evaluator shall then perform the following tests:
                   <testlist>
@@ -383,15 +391,19 @@
             </f-element>
           </f-component>
           
-          <f-component cc-id="fdp_pdc_ext.1" name="Peripheral Device Connection">
-            There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
-            peripheral device connections (see Appendix E) that are associated with this SFR.
-          <consistency-rational>
+          <f-component cc-id="fdp_pdc_ext.1" name="Peripheral Device Connection">            
+          <consistency-rationale>
             This SFR is not modified, but it references Appendix E which is modified in this
             PP‐Module to apply to audio input devices which are not listed in the PSD PP.
-          </consistency-rational>
+          </consistency-rationale>
+            <description>
+            There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
+            peripheral device connections (see Appendix E) that are associated with this SFR.
+            </description>
+            <f-element>
+              <title/>
           <aactivity>
-            <Isolation/>
+            
             <TSS>
               The evaluator shall verify that the TSS describes the peripherals that are supported by the TOE to ensure
               that it does not support any peripherals other than audio input devices.
@@ -400,6 +412,7 @@
               The evaluator shall verify that the operational user guidance describes devices authorized for use with the
               TOE in accordance with the Peripheral Device Connection Policy.
             </Guidance>
+            <CustomEA name="Isolation"/>
             <Tests>
               <testlist>
                 <test>
@@ -436,12 +449,13 @@
               </testlist>
             </Tests>
           </aactivity>
+            </f-element>
           </f-component>         
         </sec:mod_fdp>
       </modified-sfrs>
       
       <additional-sfrs/>
-      
+           
       <con-toe>
         The PSD PP defines the boundaries of a PSD—a device that provides a mechanism for securely connecting
         a set of peripherals to one or more attached computers. This PP‐Module builds on this by defining
@@ -529,13 +543,14 @@
               protocols will be supported beyond those that are defined in this PP‐Module.
             </note>
             <aactivity>
-              <Isolation/>
+              
               <TSS>
                 TSS evaluation activities for this SFR are performed under FDP_PDC_EXT.1 above.
               </TSS>
               <Guidance>
                 Guidance evaluation activities for this SFR are performed under FDP_PDC_EXT.1 above.
               </Guidance>
+              <CustomEA name="Isolation"/>
               <Tests>
                 Testing of this component is performed through evaluation of FDP_PDC_EXT.1 Test 2 as specified in
                 section 2.2.1.2 above.
@@ -556,7 +571,7 @@
           <audit>There are no auditable events foreseen.</audit>
           <dependencies>FDP_APC_EXT.1 Active PSD Connections</dependencies>  
           
-          <f-element id="fdp-udf-ext.1e1-ai">
+          <f-element id="fdp-udf-ext-1e1-ai">
             <title>
               The TSF shall ensure that [<h:i>analog audio input data</h:i>] transits the TOE
               unidirectionally from the [<h:i>TOE analog audio input peripheral interface</h:i>] to the
@@ -579,7 +594,7 @@
               attenuation at the extended audio frequency range.
             </note>
             <aactivity>
-              <Isolation/>
+              
               <TSS>
                 The evaluator shall examine the TSS or the Isolation Document to determine that it describes how the
                 TOE enforces audio input data flow isolation from other TOE functions, such that the audio input
@@ -590,6 +605,7 @@
                 negative swing signal.
               </TSS>
               <Guidance/>
+              <CustomEA name="Isolation"/>
               <Tests>
                 The evaluator shall perform the following test.<h:ol>
                   <h:li>Configure the TOE in accordance with the operational guidance. Power on the TOE.</h:li>
@@ -628,7 +644,7 @@
     the functionality required by the PSD PP.
   </appendix>
 
-  <appendix title="Peripheral Device Connections">
+  <appendix title="Peripheral Device Connections" id="perdevcon">
     <section title="General">
       This appendix expands the PSD PP Peripheral Device Connections appendix, and offers additional direction
       on peripheral devices and interface protocols with TOEs claiming compliance with this PP‐Module. This
@@ -685,10 +701,14 @@
         Cost for Security in Agency Information Technology Investments</h:a>, OMB M-06-19, July
       12, 2006. </description>
     </entry>
-    <entry>
+    <entry id="base-pp">
       <tag>PP_PSD_V5.0 or PSD PP</tag>
-      <h:a href=""><comment>Need to add URL once published.</comment>Protection Profile for Peripheral Sharing Device, Version 5.0, 2025-07-11</h:a>
+      <description>
+        <h:a href=""><comment>Need to add URL once published.</comment>Protection Profile for Peripheral
+          Sharing Device, Version 5.0, 2025-07-11</h:a>
+      </description>
+      
     </entry>
   </bibliography>
 
-    </PP>
+    </Module>
