@@ -8,8 +8,6 @@ output/PSD-AI-release-linkable.html: 2V
 output/PSD-AI-release-linkable.html: 2mV
 output/PSD-AI-release-linkable.html: CEM
 output/PSD-AI-release-linkable.html: PDIF
-output/PSD-AI-release-linkable.html: PPConfiguration
-output/PSD-AI-release-linkable.html: PPModule
 output/PSD-AI-release-linkable.html: SPD
 output/PSD-AI-release-linkable.html: SWI
 output/PSD-AI-release-linkable.html: UNPOWERED
@@ -20,8 +18,6 @@ output/PSD-AI-release.html: 1Hz
 output/PSD-AI-release.html: Assessment’
 output/PSD-AI-release.html: CEM
 output/PSD-AI-release.html: PDIF
-output/PSD-AI-release.html: PPConfiguration
-output/PSD-AI-release.html: PPModule
 output/PSD-AI-release.html: SPD
 output/PSD-AI-release.html: UNPOWERED
 output/PSD-AI-release.html: V5
@@ -55,8 +51,6 @@ output/PSD-AI.html: 2mV
 output/PSD-AI.html: Assessment’
 output/PSD-AI.html: CEM
 output/PSD-AI.html: PDIF
-output/PSD-AI.html: PPConfiguration
-output/PSD-AI.html: PPModule
 output/PSD-AI.html: SPD
 output/PSD-AI.html: SWI
 output/PSD-AI.html: UNPOWERED
