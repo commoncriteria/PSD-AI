@@ -104,7 +104,8 @@
       A TOE with an analog audio input function shall enforce unidirectional flow of analog signals from the TOE
       peripheral device analog audio input interface to the TOE connected computer analog audio output
       interface.<h:br/><h:br/>
-      Digital audio embedded in a video stream or passed through separate lines is not addressed in this PPModule.
+      Digital audio embedded in a video stream or passed through separate lines is not addressed in
+      this PP-Module.
       The capability for such audio is addressed in the PP‐Module for Video/Display Devices.<h:br/><h:br/>
       USB digital audio input devices are not authorized for use with TOEs conformant to this Module.
     </section>
@@ -181,8 +182,6 @@
       beyond what is defined by the PSD PP, there are no additional security objectives for the Operational
       Environment to satisfy.
       </sec:Security_Objectives_for_the_Operational_Environment>
-    
-    <sec:Security_Objectives_Rationale/>
   </sec:Security_Objectives>
   
   <sec:Security_Requirements>
@@ -218,7 +217,7 @@
             </title>
             </f-element>
             <f-element id="fdp-apc-ext-1e2">
-              <title>The TSF shall ensure that no data <h:b>or electrical signals</h:b>flow between connected computers whether the
+              <title>The TSF shall ensure that no data <h:b>or electrical signals</h:b> flow between connected computers whether the
                 TOE is powered on or powered off.
               </title>
               <note role="application">
@@ -308,7 +307,7 @@
                         <h:li>Set the signal generator to generate 100 Hz, 250 Hz, 500 Hz, 1 kHz, 2 kHz, 4 kHz, 8 kHz, 10 kHz, 12
                           kHz, 15 kHz, 20 kHz, 30 kHz, 40 kHz, 50 kHz, and 60 kHz and use the oscilloscope to detect the
                           leaked signal. Verify the detected signal is 11.2 mV (or well below noise level). This level of signal
-                          ensures signal attenuation of 45 dB in the extended audio frequency range.</h:li><h:br/><h:br/>
+                          ensures signal attenuation of 45 dB in the extended audio frequency range.</h:li>
                         [Conditional: The below steps are performed if switching through express user action is selected for
                         FDP_SWI_EXT.1.1]<h:br/><h:br/>
                         <h:li>Repeat steps 8‐10 with each of the other computer interfaces selected.</h:li>
@@ -317,7 +316,7 @@
                         <h:li>Power down the TOE, repeat steps 8‐12, verifying that the results are the same as previously
                             tested in those steps.</h:li>
                       </h:ol>
-                    </test>
+                    </test><h:br/><h:br/>
                     <test>
                       <h:b>Computer Isolation</h:b><h:br/><h:br/>
                       [Conditional: This test is performed if “switching can be initiated only through express user action” is
@@ -365,7 +364,7 @@
                         to the signal generator.</h:li>
                         <h:li>Repeat steps 10-14 with the signal generator connected to each of the
                           other computer interfaces.</h:li></h:ol>
-                    </test>
+                    </test><h:br/><h:br/>
                     <test>
                       <h:b>Behavior of TOE in Failure State and Powered-Off Mode</h:b><h:br/><h:br/>
                       Test 3 verifies that analog audio data cannot traverse the TOE when the TOE is
@@ -395,15 +394,12 @@
           <consistency-rationale>
             This SFR is not modified, but it references Appendix E which is modified in this
             PP‐Module to apply to audio input devices which are not listed in the PSD PP.
-          </consistency-rationale>
-            <description>
-            There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
-            peripheral device connections (see Appendix E) that are associated with this SFR.
-            </description>
+          </consistency-rationale>                       
             <f-element>
-              <title/>
-          <aactivity>
+              <title>There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
+            peripheral device connections (see Appendix E) that are associated with this SFR.</title>
             
+          <aactivity>            
             <TSS>
               The evaluator shall verify that the TSS describes the peripherals that are supported by the TOE to ensure
               that it does not support any peripherals other than audio input devices.
@@ -430,7 +426,7 @@
                   interface again.</h:li>
                     <h:li>Verify the device is rejected.</h:li>
                   </h:ol>
-                </test>
+                </test><h:br/><h:br/>
                 <test>
                   The evaluator shall verify that the TOE ports do not reject authorized devices and devices with
                   authorized protocols as per the Peripheral Device Connection Policy.<h:ol>
@@ -449,7 +445,7 @@
               </testlist>
             </Tests>
           </aactivity>
-            </f-element>
+          </f-element>
           </f-component>         
         </sec:mod_fdp>
       </modified-sfrs>
@@ -463,10 +459,8 @@
         the ability for it to act as an audio input device. The requirements of this PP do not prevent a conformant
         TOE from implementing mandatory requirements of the PSD PP.
       </con-toe>
-      <con-sec-prob>
-        This PP‐Module does not define any additional threats beyond those defined in the PSD PP. Therefore,
-        there is no inconsistency between the threats defined in the PSD PP and this PP‐Module.
-      </con-sec-prob>
+      <con-sec-prob/>        
+      
       <con-obj>
         The PSD PP does not define any TOE objectives; therefore, there is no inconsistency between it and this
         PP‐Module. The requirements defined in this PP‐Module are intended to satisfy objectives already defined
@@ -514,7 +508,7 @@
               <title>
                 The TSF shall allow connections with authorized devices as defined in
                 <assignable>devices specified in the PP or PP‐Module in which this SFR is defined</assignable>
-                and <assignable>devices specified in another PP or PP‐Module that shares a PPConfiguration
+                and <assignable>devices specified in another PP or PP‐Module that shares a PP-Configuration
                 with the PP or PP‐Module in which this SFR is defined</assignable> upon TOE
                 power up and upon connection of a peripheral device to a powered‐on TOE.
               </title>
@@ -530,7 +524,7 @@
             <ext-comp-def-title>
               <title>
                 The TSF shall allow connections with authorized devices presenting authorized
-                interface protocols as defined in <assignable>devices specified in the PP or PPModule
+                interface protocols as defined in <assignable>devices specified in the PP or PP-Module
                 in which this SFR is defined</assignable> and <assignable>devices specified in another
                 PP or PP‐Module that shares a PP‐Configuration with the PP or PP‐Module in
                 which this SFR is defined</assignable> upon TOE power up and upon connection of a
@@ -581,8 +575,8 @@
             <ext-comp-def-title>
               <title>
                 The TSF shall ensure <assignable>type of data</assignable> data transits the TOE
-                unidirectionally from the <assignable>origin point of data] interface to the
-                [assignment: destination point of data</assignable> interface.
+                unidirectionally from the <assignable>origin point of data</assignable> interface to the
+                  <assignable>destination point of data</assignable> interface.
               </title>
             </ext-comp-def-title>
             
