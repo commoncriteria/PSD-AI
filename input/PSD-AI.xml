@@ -483,6 +483,14 @@
           <fam-behavior>Components in this family define unidirectional transmission of user data.</fam-behavior>
         </ext-comp-def>
         
+        <f-component name="Authorized Devices (Analog Audio Input)" cc-id="fdp_pdc_ext.2" status="invisible">
+          <comp-lev>defines the types of physical devices that the TSF will permit to
+            connect to it.</comp-lev>
+          <management>No specific management functions are identified</management>
+          <audit>There are no auditable events foreseen.</audit>
+          <dependencies>FDP_PDC_EXT.1 Peripheral Device Connection</dependencies>
+        </f-component>
+        
         <f-component cc-id="fdp_pdc_ext.2" name="Authorized Devices (Analog Audio Input)" iteration="AI" id="fdp-pdc-ext-2-ai">
           <consistency-rationale>
             This SFR defines the devices that are authorized by this PP‐Module. This is
@@ -490,12 +498,6 @@
             Base‐PP is written specifically not to discuss the supported device types,
             instead leaving it to the various PP‐Modules to define what they support.
           </consistency-rationale>
-          
-          <comp-lev>defines the types of physical devices that the TSF will permit to
-            connect to it.</comp-lev>
-          <management>No specific management functions are identified</management>
-          <audit>There are no auditable events foreseen.</audit>
-          <dependencies>FDP_PDC_EXT.1 Peripheral Device Connection</dependencies>
           
           <f-element id="fdp-pdc-ext-2e1-ai">
             <title>
@@ -553,17 +555,19 @@
           </f-element>
         </f-component>
         
+        <f-component name="Unidirectional Data flow (Analog Audio Input)" cc-id="fdp_udf_ext.2" status="invisible">
+          <comp-lev>requires the TSF to provide unidirectional (one‐way)
+            communications between a given pair of interface types.</comp-lev>
+          <management>No specific management functions are identified.</management>
+          <audit>There are no auditable events foreseen.</audit>
+          <dependencies>FDP_APC_EXT.1 Active PSD Connections</dependencies> 
+        </f-component>
+        
         <f-component cc-id="fdp_udf_ext.1" name="Unidirectional Data flow (Analog Audio Input)" iteration="AI" id="fdp-udf-ext-2-ai">
           <consistency-rationale>
             This SFR applies to unidirectional audio communications which are not listed
             in the PSD PP.
           </consistency-rationale>
-          
-          <comp-lev>requires the TSF to provide unidirectional (one‐way)
-            communications between a given pair of interface types.</comp-lev>
-          <management>No specific management functions are identified.</management>
-          <audit>There are no auditable events foreseen.</audit>
-          <dependencies>FDP_APC_EXT.1 Active PSD Connections</dependencies>  
           
           <f-element id="fdp-udf-ext-1e1-ai">
             <title>
