@@ -152,7 +152,7 @@
       intended for one connected computer cannot leak to another connected computer. This also requires
       that any data from one connected computer cannot reach another connected computer by way of the
       PSD.
-      <threats/>
+      <threats/>      
     </sec:Threats>        
     
     <sec:Assumptions>
@@ -555,7 +555,7 @@
           </f-element>
         </f-component>
         
-        <f-component name="Unidirectional Data flow" cc-id="fdp_udf_ext.2" status="invisible">
+        <f-component name="Unidirectional Data Flow" cc-id="fdp_udf_ext.2" status="invisible">
           <comp-lev>requires the TSF to provide unidirectional (one‐way)
             communications between a given pair of interface types.</comp-lev>
           <management>No specific management functions are identified.</management>
@@ -563,7 +563,7 @@
           <dependencies>FDP_APC_EXT.1 Active PSD Connections</dependencies> 
         </f-component>
         
-        <f-component cc-id="fdp_udf_ext.1" name="Unidirectional Data flow (Analog Audio Input)" iteration="AI" id="fdp-udf-ext-2-ai">
+        <f-component cc-id="fdp_udf_ext.1" name="Unidirectional Data Flow (Analog Audio Input)" iteration="AI" id="fdp-udf-ext-2-ai">
           <consistency-rationale>
             This SFR applies to unidirectional audio communications which are not listed
             in the PSD PP.
