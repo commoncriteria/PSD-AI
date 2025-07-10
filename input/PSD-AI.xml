@@ -483,7 +483,7 @@
           <fam-behavior>Components in this family define unidirectional transmission of user data.</fam-behavior>
         </ext-comp-def>
         
-        <f-component name="Authorized Devices (Analog Audio Input)" cc-id="fdp_pdc_ext.2" status="invisible">
+        <f-component name="Authorized Devices" cc-id="fdp_pdc_ext.2" status="invisible">
           <comp-lev>defines the types of physical devices that the TSF will permit to
             connect to it.</comp-lev>
           <management>No specific management functions are identified</management>
@@ -555,7 +555,7 @@
           </f-element>
         </f-component>
         
-        <f-component name="Unidirectional Data flow (Analog Audio Input)" cc-id="fdp_udf_ext.2" status="invisible">
+        <f-component name="Unidirectional Data flow" cc-id="fdp_udf_ext.2" status="invisible">
           <comp-lev>requires the TSF to provide unidirectional (one‐way)
             communications between a given pair of interface types.</comp-lev>
           <management>No specific management functions are identified.</management>
