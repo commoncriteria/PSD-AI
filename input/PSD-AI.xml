@@ -489,6 +489,27 @@
           <management>No specific management functions are identified</management>
           <audit>There are no auditable events foreseen.</audit>
           <dependencies>FDP_PDC_EXT.1 Peripheral Device Connection</dependencies>
+          
+          <f-element id="fdp-pdc-ext-2e1">
+              <title>
+                The TSF shall allow connections with authorized devices as defined in
+                <assignable>devices specified in the PP or PP‐Module in which this SFR is defined</assignable>
+                and <assignable>devices specified in another PP or PP‐Module that shares a PP-Configuration
+                with the PP or PP‐Module in which this SFR is defined</assignable> upon TOE
+                power up and upon connection of a peripheral device to a powered‐on TOE.
+              </title>
+            </f-element>
+          
+          <f-element id="fdp-pdc-ext-2e2">
+            <title>
+              The TSF shall allow connections with authorized devices presenting authorized
+              interface protocols as defined in <assignable>devices specified in the PP or PP-Module
+                in which this SFR is defined</assignable> and <assignable>devices specified in another
+                  PP or PP‐Module that shares a PP‐Configuration with the PP or PP‐Module in
+                  which this SFR is defined</assignable> upon TOE power up and upon connection of a
+              peripheral device to a powered‐on TOE.
+            </title>
+          </f-element>
         </f-component>
         
         <f-component cc-id="fdp_pdc_ext.2" name="Authorized Devices (Analog Audio Input)" iteration="AI" id="fdp-pdc-ext-2-ai">
@@ -506,16 +527,6 @@
               to a powered‐on TOE.
             </title>
             
-            <ext-comp-def-title>
-              <title>
-                The TSF shall allow connections with authorized devices as defined in
-                <assignable>devices specified in the PP or PP‐Module in which this SFR is defined</assignable>
-                and <assignable>devices specified in another PP or PP‐Module that shares a PP-Configuration
-                with the PP or PP‐Module in which this SFR is defined</assignable> upon TOE
-                power up and upon connection of a peripheral device to a powered‐on TOE.
-              </title>
-            </ext-comp-def-title>
-            
           </f-element>
           <f-element id="fdp-pdc-ext-2e2-ai">
             <title>
@@ -523,16 +534,7 @@
               interface protocols as defined in [<h:i>Appendix E</h:i>] and [<h:i>no other devices</h:i>] upon TOE
               power up and upon connection of a peripheral device to a powered‐on TOE.
             </title>
-            <ext-comp-def-title>
-              <title>
-                The TSF shall allow connections with authorized devices presenting authorized
-                interface protocols as defined in <assignable>devices specified in the PP or PP-Module
-                in which this SFR is defined</assignable> and <assignable>devices specified in another
-                PP or PP‐Module that shares a PP‐Configuration with the PP or PP‐Module in
-                which this SFR is defined</assignable> upon TOE power up and upon connection of a
-                peripheral device to a powered‐on TOE.
-              </title>
-            </ext-comp-def-title>
+            
             <note role="application">
               A TOE that claims conformance to this PP‐Module is not permitted to conform to
               any other PP‐Modules that extend the PSD PP. Therefore, no other devices or
@@ -561,6 +563,15 @@
           <management>No specific management functions are identified.</management>
           <audit>There are no auditable events foreseen.</audit>
           <dependencies>FDP_APC_EXT.1 Active PSD Connections</dependencies> 
+          <f-element>
+            <title>
+              The TSF shall ensure <assignable>type of data</assignable> data transits the TOE
+              unidirectionally from the <assignable>origin point of data</assignable> interface to the
+              <assignable>destination point of data</assignable> interface.
+            </title>
+          </f-element>
+          
+          
         </f-component>
         
         <f-component cc-id="fdp_udf_ext.1" name="Unidirectional Data Flow (Analog Audio Input)" iteration="AI" id="fdp-udf-ext-2-ai">
@@ -575,14 +586,6 @@
               unidirectionally from the [<h:i>TOE analog audio input peripheral interface</h:i>] to the
               [<h:i>TOE analog audio input computer interface</h:i>].
             </title>
-            
-            <ext-comp-def-title>
-              <title>
-                The TSF shall ensure <assignable>type of data</assignable> data transits the TOE
-                unidirectionally from the <assignable>origin point of data</assignable> interface to the
-                  <assignable>destination point of data</assignable> interface.
-              </title>
-            </ext-comp-def-title>
             
             <note role="application">
               This SFR applies to all types of analog audio input data (e.g., if the computer
