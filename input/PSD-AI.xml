@@ -146,13 +146,25 @@
     in the PSD PP will also apply to the TOE unless otherwise specified.
     
     <sec:Threats>      
-      This PP‐Module defines no additional threats beyond those defined in the PSD PP.<h:br/><h:br/>
-      The SFRs defined in this PP‐Module are intended to mitigate the T.DATA_LEAK and T.SIGNAL_LEAK
-      threats defined in the PSD PP. Specifically, this PP‐Module must ensure that analog audio input data
-      intended for one connected computer cannot leak to another connected computer. This also requires
-      that any data from one connected computer cannot reach another connected computer by way of the
-      PSD.
-      <threats/>      
+      <threats>
+        <threat name="T.DATA_LEAK">
+          <from base="bpp-psd"/>
+          <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
+          <addressed-by>FDP_PDC_EXT.1/AI</addressed-by><rationale>Mitigates this threat by allowing
+            only authorized devices to connect as defined in a specified list.</rationale>
+          <addressed-by>FDP_UDF_EXT.1/AI</addressed-by><rationale>Mitigates this threat
+            by ensuring data transmits unidirectionally between interfaces.</rationale>
+        </threat>
+        
+          <threat name="T.SIGNAL_LEAK">
+            <from base="bpp-psd"/>
+            <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
+            <addressed-by>FDP_PDC_EXT.1/AI</addressed-by><rationale>Mitigates this threat by allowing
+              only authorized devices to connect as defined in a specified list.</rationale>
+            <addressed-by>FDP_UDF_EXT.1/AI</addressed-by><rationale>Mitigates this threat
+              by ensuring data transmits unidirectionally between interfaces.</rationale>        
+        </threat>
+      </threats>      
     </sec:Threats>        
     
     <sec:Assumptions>
@@ -166,16 +178,6 @@
   </sec:Security_Problem_Definition>  
 
   <sec:Security_Objectives>
-    <sec:Security_Objectives_for_the_TOE>
-      Because this PP‐Module does not define any additional threats or organizational security policies beyond
-      what is defined by the PSD PP, there are no additional security objectives for the TOE to satisfy.<h:br/><h:br/>
-      A TOE that conforms to this PP‐Module must address O.COMPUTER_INTERFACE_ISOLATION,
-      O.COMPUTER_INTERFACE_ISOLATION_UNPOWERED, and O.USER_DATA_ISOLATION specifically for
-      analog audio input peripherals.<h:br/><h:br/>
-      In addition to the SFRs in the PSD PP, these objectives are addressed by the refined FDP_APC_EXT.1 and
-      FDP_PDC_EXT.1, and FDP_PDC_EXT.2/AI and FDP_UDF_EXT.1/AI as defined in this PP‐Module.
-      <SOs/>
-    </sec:Security_Objectives_for_the_TOE>    
     
     <sec:Security_Objectives_for_the_Operational_Environment>
       Because this PP‐Module does not define any additional assumptions or organizational security policies
@@ -469,11 +471,18 @@
       <con-op-en>
         This PP-Module does not define any objectives for the TOE's operational environment.
       </con-op-en>
+      
+      <con-mod ref="T.DATA_LEAK">
+        This threat is from the PSD PP, thus no conflict exists.
+      </con-mod>
+      <con-mod ref="T.SIGNAL_LEAK">
+        This threat is from the PSD PP, thus no conflict exists.
+      </con-mod>
     </base-pp>
     
     <man-sfrs>
       <section title="User Data Protection (FDP)" id="FDP">
-        <ext-comp-def fam-id="FDP_PDC_EXT" title="Authorized Devices (Analog Audio Input)">
+        <ext-comp-def fam-id="FDP_PDC_EXT" title="Authorized Devices">
           <fam-behavior>This family is defined in the PSD PP. This PP‐Module augments the extended family by adding one
             additional component, FDP_PDC_EXT.2. This new component and its impact on the extended family’s
             component leveling are shown below; reference the PSD PP for all other definitions for this family.</fam-behavior>
@@ -705,7 +714,7 @@
     <entry id="base-pp">
       <tag>PP_PSD_V5.0 or PSD PP</tag>
       <description>
-        <h:a href=""><comment>Need to add URL once published.</comment>Protection Profile for Peripheral
+        <h:a href="https://www.niap-ccevs.org/protectionprofiles/412"><comment>Need to add URL once published.</comment>Protection Profile for Peripheral
           Sharing Device, Version 5.0, 2025-07-11</h:a>
       </description>
       
