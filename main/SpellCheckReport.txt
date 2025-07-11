@@ -10,7 +10,6 @@ output/PSD-AI-release-linkable.html: CEM
 output/PSD-AI-release-linkable.html: PDIF
 output/PSD-AI-release-linkable.html: SPD
 output/PSD-AI-release-linkable.html: SWI
-output/PSD-AI-release-linkable.html: UNPOWERED
 output/PSD-AI-release-linkable.html: V5
 output/PSD-AI-release-linkable.html: mV
 output/PSD-AI-release-linkable.html: unidirectionally
@@ -19,7 +18,6 @@ output/PSD-AI-release.html: Assessment’
 output/PSD-AI-release.html: CEM
 output/PSD-AI-release.html: PDIF
 output/PSD-AI-release.html: SPD
-output/PSD-AI-release.html: UNPOWERED
 output/PSD-AI-release.html: V5
 output/PSD-AI-release.html: unidirectionally
 output/PSD-AI-sd.html: 00V
@@ -53,7 +51,6 @@ output/PSD-AI.html: CEM
 output/PSD-AI.html: PDIF
 output/PSD-AI.html: SPD
 output/PSD-AI.html: SWI
-output/PSD-AI.html: UNPOWERED
 output/PSD-AI.html: V5
 output/PSD-AI.html: computers’
 output/PSD-AI.html: mV
