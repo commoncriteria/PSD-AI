@@ -28,7 +28,7 @@
     <entry>
       <version>1.0</version>
       <date>2019-07-19</date>
-      <subject>Initial Version</subject>
+      <subject>Initial Draft</subject>
     </entry>
   </RevisionHistory>
   <RevisionHistory>
@@ -133,7 +133,7 @@
       <cc-pt3-conf>conformant</cc-pt3-conf> 
       <cc-pp-conf/>
       <cc-pp-config-with>
-        <PP-cc-ref>Protection Profile for Peripheral Sharing Device, Version 4.0</PP-cc-ref>
+        <PP-cc-ref>Protection Profile for Peripheral Sharing Device, Version 5.0</PP-cc-ref>
       </cc-pp-config-with>        
       <cc-pkg-claim/>
     </CClaimsInfo>
