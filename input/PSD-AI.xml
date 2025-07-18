@@ -224,7 +224,7 @@
       
       <git>
         <url>https://github.com/commoncriteria/ai</url>
-        <branch>release-5.0</branch>
+        <branch>main</branch>
       </git>
       <url>https://github.com/commoncriteria/psd</url>
       
