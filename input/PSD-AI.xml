@@ -49,7 +49,11 @@
       activities for a wide variety of PSD products but more specific requirements and assurance activities apply
       depending on the types of physical and logical interfaces provided by a PSD. Therefore, additional Security
       Functional Requirements (SFR) have been defined in this PP‐Module to define security functionality that
-      is unique to a PSD that provides the ability to support peripheral audio input devices.      
+      is unique to a PSD that provides the ability to support peripheral audio input devices. <h:br/><h:br/>
+      This PP-Module is intended for use with the following Base-PPs:<h:ul>
+        <h:li>Peripheral Sharing Devices Protection Profile, Version 5.0</h:li>
+      </h:ul>
+      
     </section>
     
     <tech-terms>
