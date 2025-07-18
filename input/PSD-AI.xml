@@ -120,7 +120,35 @@
       cases as defined by the PSD PP. The functionality defined by this PP‐Module is implementation-independent
       (i.e., not tied to any specific use cases) and is related entirely to the specific security
       requirements related to security of the physical and logical interfaces for analog audio input devices.
-    </section>    
+    </section> 
+    <section title="Test Environment for Evaluation Activities">
+      In order to ensure that the TOE demonstrates the functionality required by the EAs, it is necessary for
+      the evaluator to ensure that they have appropriate equipment to conduct the required testing. The
+      additional equipment needed to perform the testing is listed below along with the
+      purpose of each piece of equipment.<h:ul>
+      <h:li><h:b>Amplified speakers</h:b> – The tests depend upon the use of high‐quality system 2.0 standard
+      or higher amplified speakers. The number of sets required is the same as the number of
+      computers supported by the TOE. All sets must be identical.</h:li>
+      <h:li><h:b>Tone generator software application</h:b> – The tests require the use of a tone generator
+      software application that can generate sine wave audio at configurable pitch (in Hz) and volume
+      levels.</h:li>
+      <h:li><h:b>Computer microphone (analog)</h:b> – The tests require the use of a microphone to be
+      connected to the TOE.</h:li>
+      <h:li><h:b>Digital voltmeter / multimeter</h:b> – The tests require the use of a digital voltmeter to
+      measure the DC voltage over TOE peripheral interfaces.</h:li>
+      <h:li><h:b>Audio signal generator</h:b> – The tests require the use of an audio signal generator that is
+      capable of generating a sine wave with positive/negative bias from DC up to 100 kHz.</h:li>
+      <h:li><h:b>Oscilloscope</h:b> – The tests require the use of an oscilloscope to detect signal leakage
+      between peripheral interfaces. Any general purpose single channel or more oscilloscope may be
+      used. Oscilloscope bandwidth shall be at least 1 MHz. One single ended probe is also required.</h:li>
+      </h:ul>
+      This equipment is required in addition to that which is relevant for testing any PSD as defined in the PSD
+      PP.<h:br/><h:br/>      
+      When conducting testing, the evaluator must ensure that all combinations of computer port group
+      connections and switch selections are tested. For example, if testing a 16‐port device, the evaluator may
+      use four connected computers, but must change the connected ports many times to ensure that each of
+      the possible permutations are tested. Some equivalency arguments between ports are allowed.
+    </section>
   </sec:Introduction>
 
   <section title="Conformance Claims" id="sec-cclaims" boilerplate="no">
@@ -150,7 +178,7 @@
         <threat name="T.DATA_LEAK">
           <from base="bpp-psd"/>
           <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
-          <addressed-by>FDP_PDC_EXT.1/AI</addressed-by><rationale>Mitigates this threat by allowing
+          <addressed-by>FDP_PDC_EXT.2/AI</addressed-by><rationale>Mitigates this threat by allowing
             only authorized devices to connect as defined in a specified list.</rationale>
           <addressed-by>FDP_UDF_EXT.1/AI</addressed-by><rationale>Mitigates this threat
             by ensuring data transmits unidirectionally between interfaces.</rationale>
@@ -159,7 +187,7 @@
           <threat name="T.SIGNAL_LEAK">
             <from base="bpp-psd"/>
             <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
-            <addressed-by>FDP_PDC_EXT.1/AI</addressed-by><rationale>Mitigates this threat by allowing
+            <addressed-by>FDP_PDC_EXT.2/AI</addressed-by><rationale>Mitigates this threat by allowing
               only authorized devices to connect as defined in a specified list.</rationale>
             <addressed-by>FDP_UDF_EXT.1/AI</addressed-by><rationale>Mitigates this threat
               by ensuring data transmits unidirectionally between interfaces.</rationale>        
