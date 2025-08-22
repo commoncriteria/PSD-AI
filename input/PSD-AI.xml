@@ -44,7 +44,7 @@
       The scope of this PP‐Module is to describe the security functionality of a specific type of Peripheral Sharing
       Device (PSD) product in terms of [CC] and to define functional and assurance requirements for such
       products. A TOE that claims compliance to this PP‐Module must claim conformance to a PP‐Configuration
-      containing this PP‐Module and the Protection Profile for Peripheral Sharing Device (PSD PP). This is
+      containing this PP‐Module and the Protection Profile for Peripheral Sharing Devices (PSD PP). This is
       because the PSD PP is a generic Protection Profile aimed at defining baseline requirements and assurance
       activities for a wide variety of PSD products but more specific requirements and assurance activities apply
       depending on the types of physical and logical interfaces provided by a PSD. Therefore, additional Security
@@ -165,7 +165,7 @@
       <cc-pt3-conf>conformant</cc-pt3-conf> 
       <cc-pp-conf/>
       <cc-pp-config-with>
-        <PP-cc-ref>Protection Profile for Peripheral Sharing Device, Version 5.0</PP-cc-ref>
+        <PP-cc-ref>Protection Profile for Peripheral Sharing Devices, Version 5.0</PP-cc-ref>
       </cc-pp-config-with>        
       <cc-pkg-claim/>
     </CClaimsInfo>
@@ -220,7 +220,7 @@
   
   <sec:Security_Requirements>
     <comment>Need to add URLs once created</comment>
-    <base-pp id="bpp-psd" name="Peripheral Sharing Device" product="Device" short="PSD" version="5.0">
+    <base-pp id="bpp-psd" name="Peripheral Sharing Devices" product="Device" short="PSD" version="5.0">
       
       <git>
         <url>https://github.com/commoncriteria/ai</url>
@@ -748,7 +748,7 @@
       <description>
         <h:a href="https://www.niap-ccevs.org/protectionprofiles/412"><comment>Need to add URL and
           adjust date once published.</comment>Protection Profile for Peripheral
-          Sharing Device, Version 5.0, 2025-07-11</h:a>
+          Sharing Devices, Version 5.0, 2025-07-11</h:a>
       </description>
       
     </entry>
