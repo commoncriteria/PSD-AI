@@ -2,3 +2,4 @@
 * https://commoncriteria.github.io/PSD-AI/main/PSD-AI-release.html[PSD-AI-release.html]
 * https://commoncriteria.github.io/PSD-AI/main/PSD-AI-sd.html[PSD-AI-sd.html]
 * https://commoncriteria.github.io/PSD-AI/main/PSD-AI.html[PSD-AI.html]
+* https://commoncriteria.github.io/PSD-AI/main/diff-pp-template-release.html[diff-pp-template-release.html]
