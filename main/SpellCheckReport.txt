@@ -8,6 +8,7 @@ output/PSD-AI-release-linkable.html: 2V
 output/PSD-AI-release-linkable.html: 2mV
 output/PSD-AI-release-linkable.html: CEM
 output/PSD-AI-release-linkable.html: PDIF
+output/PSD-AI-release-linkable.html: PSDPP
 output/PSD-AI-release-linkable.html: SPD
 output/PSD-AI-release-linkable.html: SWI
 output/PSD-AI-release-linkable.html: mV
@@ -16,6 +17,7 @@ output/PSD-AI-release.html: 1Hz
 output/PSD-AI-release.html: Assessment’
 output/PSD-AI-release.html: CEM
 output/PSD-AI-release.html: PDIF
+output/PSD-AI-release.html: PSDPP
 output/PSD-AI-release.html: SPD
 output/PSD-AI-release.html: unidirectionally
 output/PSD-AI-sd.html: 00V
@@ -46,6 +48,7 @@ output/PSD-AI.html: 2mV
 output/PSD-AI.html: Assessment’
 output/PSD-AI.html: CEM
 output/PSD-AI.html: PDIF
+output/PSD-AI.html: PSDPP
 output/PSD-AI.html: SPD
 output/PSD-AI.html: SWI
 output/PSD-AI.html: computers’

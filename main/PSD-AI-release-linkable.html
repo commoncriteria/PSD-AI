@@ -630,17 +630,15 @@ function showTarget(id){
     </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br></div><h1 class="title" style="page-break-before:auto;">PP-Module for Audio Input Device</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"><br>
       Version: 2.0<br>2025-07-11<br><b>National Information Assurance Partnership</b><br></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.0</td><td>2019-07-19</td><td>Initial Draft</td></tr>
 <tr><td>2.0</td><td>2025-07-11</td><td>Updates for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022</td></tr>
-</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#ppoverview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#_sec_5" style="text-indent:10px">1.6<span>Test Environment for Evaluation Activities</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-bpp-psd" style="text-indent:10px">5.1<span>
-    Protection Profile for Peripheral Sharing Devices
+</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#ppoverview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#_sec_5" style="text-indent:10px">1.6<span>Test Environment for Evaluation Activities</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-PSD" style="text-indent:10px">5.1<span>Protection Profile for Peripheral Sharing Devices
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-bpp-psd" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#mod_fdp" style="text-indent:30px">5.1.1.1<span>User Data Protection (FDP)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#FDP" style="text-indent:20px">5.2.1<span>User Data Protection (FDP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-bpp-psd" style="text-indent:10px">6.1<span>
-    Protection Profile for Peripheral Sharing Devices</span></a><a href="#contoe-bpp-psd" style="text-indent:20px">6.1.1<span>
+    </span></a><a href="#modsfr-PSD" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#mod_fdp" style="text-indent:30px">5.1.1.1<span>User Data Protection (FDP)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#FDP" style="text-indent:20px">5.2.1<span>User Data Protection (FDP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-PSD" style="text-indent:10px">6.1<span>Protection Profile for Peripheral Sharing Devices</span></a><a href="#contoe-PSD" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
-      </span></a><a href="#consecprob-bpp-psd" style="text-indent:20px">6.1.2<span>
+      </span></a><a href="#consecprob-PSD" style="text-indent:20px">6.1.2<span>
 	Consistency of Security Problem Definition
-      </span></a><a href="#conobj-bpp-psd" style="text-indent:20px">6.1.3<span>
+      </span></a><a href="#conobj-" style="text-indent:20px">6.1.3<span>
 			Consistency of OE Objectives
-		</span></a><a href="#conreq-bpp-psd" style="text-indent:20px">6.1.4<span>
+		</span></a><a href="#conreq-" style="text-indent:20px">6.1.4<span>
 	Consistency of Requirements
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
     </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
@@ -657,7 +655,7 @@ function showTarget(id){
       depending on the types of physical and logical interfaces provided by a <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr><a id="period_2" href="#period_2">. </a>Therefore, additional Security
       Functional Requirements (<abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>) have been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module to define security functionality that
       is unique to a <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> that provides the ability to support peripheral audio input devices<a id="period_3" href="#period_3">. </a><br><br>
-      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PPs</a></abbr>:<ul>
+      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is intended for use with the following Base-PPs:<ul>
         <li>Peripheral Sharing Devices Protection Profile, Version 5.0</li>
       </ul>
       
@@ -665,7 +663,7 @@ function showTarget(id){
     
     <div class="no-link"><h2 id="glossary" class="indexable" data-level="2">1.2 Terms</h2>
 The following sections list Common Criteria and technology terms used in this document<a id="period_4" href="#period_4">. </a>    <h3 id="cc-terms" class="indexable" data-level="3">1.2.1 Common Criteria Terms</h3><table><tr><td><div id="Assurance">Assurance</div></td><td>Grounds for confidence that a TOE meets the SFRs <a href="#bibCC">[CC]</a><a id="period_5" href="#period_5">. </a></td></tr>
-<tr><td><div id="Base_Protection_Profile">Base Protection Profile (Base-PP)</div></td><td>Protection Profile used as a basis to build a PP-Configuration<a id="period_6" href="#period_6">. </a></td></tr>
+<tr><td><div id="Base_Protection_Profile">Base Protection Profile (base PP)</div></td><td>Protection Profile used as a basis to build a PP-Configuration<a id="period_6" href="#period_6">. </a></td></tr>
 <tr><td><div id="Collaborative_Protection_Profile">Collaborative Protection Profile (cPP)</div></td><td>A Protection Profile developed by
     international technical communities and approved by multiple schemes<a id="period_7" href="#period_7">. </a></td></tr>
 <tr><td><div id="Common_Criteria">Common Criteria (CC)</div></td><td>Common Criteria for Information Technology Security Evaluation (International Standard ISO/IEC 15408)<a id="period_8" href="#period_8">. </a></td></tr>
@@ -685,8 +683,8 @@ The following sections list Common Criteria and technology terms used in this do
 	    or functionality<a id="period_16" href="#period_16">. </a></td></tr>
 <tr><td><div id="Operational_Environment">Operational Environment (OE)</div></td><td>Hardware and software that are outside the TOE boundary that support the TOE functionality and security policy<a id="period_17" href="#period_17">. </a></td></tr>
 <tr><td><div id="Protection_Profile">Protection Profile (PP)</div></td><td>An implementation-independent set of security requirements for a category of products<a id="period_18" href="#period_18">. </a></td></tr>
-<tr><td><div id="Protection_Profile_Configuration">Protection Profile Configuration (PP-Configuration)</div></td><td>A comprehensive set of security requirements for a product type that consists of at least one Base-PP and at least one PP-Module<a id="period_19" href="#period_19">. </a></td></tr>
-<tr><td><div id="Protection_Profile_Module">Protection Profile Module (PP-Module)</div></td><td>An implementation-independent statement of security needs for a TOE type complementary to one or more Base-PPs<a id="period_20" href="#period_20">. </a></td></tr>
+<tr><td><div id="Protection_Profile_Configuration">Protection Profile Configuration (PP-Configuration)</div></td><td>A comprehensive set of security requirements for a product type that consists of at least one base PP and at least one PP-Module<a id="period_19" href="#period_19">. </a></td></tr>
+<tr><td><div id="Protection_Profile_Module">Protection Profile Module (PP-Module)</div></td><td>An implementation-independent statement of security needs for a TOE type complementary to one or more base PPs<a id="period_20" href="#period_20">. </a></td></tr>
 <tr><td><div id="Security_Assurance_Requirement">Security Assurance Requirement (SAR)</div></td><td>A requirement to assure the security of the TOE<a id="period_21" href="#period_21">. </a></td></tr>
 <tr><td><div id="Security_Functional_Requirement">Security Functional Requirement (SFR)</div></td><td>A requirement for security enforcement by the TOE<a id="period_22" href="#period_22">. </a></td></tr>
 <tr><td><div id="Security_Target">Security Target (ST)</div></td><td>A set of implementation-dependent security requirements for a specific product<a id="period_23" href="#period_23">. </a></td></tr>
@@ -790,31 +788,29 @@ The following sections list Common Criteria and technology terms used in this do
 					This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not claim conformance to 
 					any Protection Profile<a id="period_75" href="#period_75">. </a>				</dd><p></p><dd>The following <abbr class="dyn-abbr"><a href="#abbr_PP">PPs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules are allowed to be specified in a 
 					<abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>:
-					<ul><li>Protection Profile for Peripheral Sharing Devices, Version 5.0</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any 
-						Functional or Assurance Packages<a id="period_76" href="#period_76">. </a></dd></dl>
+					<ul><li><a href="https://niap-ccevs.org/protectionprofiles/412">Protection Profile for Peripheral Sharing Devices
+        Version 
+        5.0</a><a id="period_76" href="#period_76">. </a></li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any 
+						Functional or Assurance Packages<a id="period_77" href="#period_77">. </a></dd></dl>
   <h1 class="indexable" data-level="1" id="Security_Problem_Definition">3 Security Problem Definition</h1>  
     The security problem is described in terms of the threats that the OS is expected to address, assumptions about the
-    operational environment, and any organizational security policies that the OS is expected to enforce<a id="period_77" href="#period_77">. </a><br><br>
+    operational environment, and any organizational security policies that the OS is expected to enforce<a id="period_78" href="#period_78">. </a><br><br>
     Note that as a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module of the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, all threats, assumptions, and Organizational Security Policies (OSPs) defined
-    in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> will also apply to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> unless otherwise specified<a id="period_78" href="#period_78">. </a>    
+    in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> will also apply to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> unless otherwise specified<a id="period_79" href="#period_79">. </a>    
     <h2 class="indexable" data-level="2" id="Threats">3.1 Threats</h2>      
       <dl><dt class="threat defined" id="T.DATA_LEAK">T.DATA_LEAK
-		(from PSD PP)
-	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_79" href="#period_79">. </a></span></dd><dt class="threat defined" id="T.SIGNAL_LEAK">T.SIGNAL_LEAK
-		(from PSD PP)
-	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_80" href="#period_80">. </a></span></dd></dl>      
+		(from PSDPP)
+	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_80" href="#period_80">. </a></span></dd><dt class="threat defined" id="T.SIGNAL_LEAK">T.SIGNAL_LEAK
+		(from PSDPP)
+	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_81" href="#period_81">. </a></span></dd></dl>      
             
     
-    <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2>
-      This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module defines no additional assumptions beyond those defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_81" href="#period_81">. </a>      
-      This document does not define any additional assumptions<a id="period_82" href="#period_82">. </a>    
+    <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines no Assumptions beyond those defined in the claimed <abbr class="dyn-abbr"><a href="#abbr_base PP">base PP</a></abbr>(s)<a id="period_82" href="#period_82">. </a></p>
+      This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module defines no additional assumptions beyond those defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_83" href="#period_83">. </a>      
     
     
-    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
-      expected to satisfy the organizational security policy listed below in addition to all
-      organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_83" href="#period_83">. </a></p>
+    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines no Organizational Security Policies beyond those defined in the claimed <abbr class="dyn-abbr"><a href="#abbr_base PP">base PP</a></abbr>(s)<a id="period_84" href="#period_84">. </a></p>
       
-      This document does not define any additional OSPs<a id="period_84" href="#period_84">. </a>    
     
   <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>
     
@@ -843,8 +839,7 @@ The following sections list Common Criteria and technology terms used in this do
             suggesting the purpose of the operation, e.g<a id="period_92" href="#period_92">. </a>"/EXAMPLE1."
        </li>
      </ul>
-   <h2 id="secreq-bpp-psd" class="indexable" data-level="2">5.1 
-    Protection Profile for Peripheral Sharing Devices
+   <h2 id="secreq-PSD" class="indexable" data-level="2">5.1 Protection Profile for Peripheral Sharing Devices
        Security Functional Requirements Direction
     </h2>
         When a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims compliance to this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module, it is necessary to make claims in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
@@ -852,9 +847,9 @@ The following sections list Common Criteria and technology terms used in this do
         describe any <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> claims that must be made when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary includes the functionality
         described by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_94" href="#period_94">. </a>Note that for some requirements, only certain individual elements within
         the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> have been modified for this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_95" href="#period_95">. </a>Any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> elements that were omitted from the selections
-        below are to be included in a conformant <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> unmodified from their definition in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_96" href="#period_96">. </a>      <h3 id="modsfr-bpp-psd" class="indexable" data-level="3">5.1.1  Modified SFRs </h3>
+        below are to be included in a conformant <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> unmodified from their definition in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_96" href="#period_96">. </a>      <h3 id="modsfr-PSD" class="indexable" data-level="3">5.1.1  Modified SFRs </h3>
 
-		The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> listed in this section are defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> and 
+		The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> listed in this section are defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> and 
 		relevant to the secure operation of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_97" href="#period_97">. </a>		       
         
         <h4 id="mod_fdp" class="indexable" data-level="4">5.1.1.1 User Data Protection (FDP)</h4>
@@ -899,9 +894,7 @@ The following sections list Common Criteria and technology terms used in this do
                   The evaluator shall examine the Isolation Documentation to determine that it describes how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
                   prevents the audio input signal from traversing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off<a id="period_110" href="#period_110">. </a>                </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                   The evaluator shall then perform the following tests:
-                  <span class="testlist-"><ul>
-                    <li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FDP_APC_EXT.1:1</a>:
-      
+                  <span class="testlist-"><br><br><br><br><ul><li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FDP_APC_EXT.1:1</a>
                       <b>Positive and Negative Analog Audio Input Switching Functionality and Leakages</b><br><br>
                       AI verifies that the switching functionality works as expected and checks for leakage to non-selected
                       computers when the audio source is connected to the peripheral interface<a id="period_111" href="#period_111">. </a>In the following steps, the
@@ -958,9 +951,7 @@ The following sections list Common Criteria and technology terms used in this do
                         <li>Power down the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, repeat steps 8&#8208;12, verifying that the results are the same as previously
                             tested in those steps<a id="period_141" href="#period_141">. </a></li>
                       </ol>
-                    </li><br><br>
-                    <li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FDP_APC_EXT.1:2</a>:
-      
+                    </li><li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FDP_APC_EXT.1:2</a>
                       <b>Computer Isolation</b><br><br>
                       [Conditional: This test is performed if &#8220;switching can be initiated only through express user action&#8221; is
                       selected for FDP_SWI_EXT.1.1]<br><br>
@@ -1006,9 +997,7 @@ The following sections list Common Criteria and technology terms used in this do
                         to the signal generator<a id="period_174" href="#period_174">. </a></li>
                         <li>Repeat steps 10-14 with the signal generator connected to each of the
                           other computer interfaces<a id="period_175" href="#period_175">. </a></li></ol>
-                    </li><br><br>
-                    <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>:
-      
+                    </li><li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>
                       <b>Behavior of <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in Failure State and Powered-Off Mode</b><br><br>
                       Test 3 verifies that analog audio data cannot traverse the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
                       in a failure state or powered-off<a id="period_176" href="#period_176">. </a><br><br>
@@ -1026,8 +1015,7 @@ The following sections list Common Criteria and technology terms used in this do
                         Depending on shielding the speakers might pick up AC (50 or 60 Hz)<a id="period_184" href="#period_184">. </a>This is not considered a
                         failure<a id="period_185" href="#period_185">. </a></li>
                         <li>Verify that a tone is not heard<a id="period_186" href="#period_186">. </a></li></ol>
-                    </li>
-                  </ul></span>
+                    </li></ul></span>
                 </div></div></div></div></div>
           
           <div class="comp" id="FDP_PDC_EXT.1"><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4>            
@@ -1045,9 +1033,7 @@ The following sections list Common Criteria and technology terms used in this do
               The evaluator shall verify that the operational user guidance describes devices authorized for use with the
               <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in accordance with the Peripheral Device Connection Policy<a id="period_190" href="#period_190">. </a>            </div></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component<a id="period_191" href="#period_191">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
-              <span class="testlist-"><ul>
-                <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_PDC_EXT.1:1</a>:
-      
+              <span class="testlist-"><br><br><ul><li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_PDC_EXT.1:1</a>
                   The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> ports properly reject unauthorized devices and devices
                   with unauthorized protocols as per the Peripheral Device Connection Policy<a id="period_192" href="#period_192">. </a><br><br>
                   For this test, verify device rejection through <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> user indication in accordance with the operational user
@@ -1062,9 +1048,7 @@ The following sections list Common Criteria and technology terms used in this do
                   interface again<a id="period_199" href="#period_199">. </a></li>
                     <li>Verify the device is rejected<a id="period_200" href="#period_200">. </a></li>
                   </ol>
-                </li><br><br>
-                <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:2</a>:
-      
+                </li><li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:2</a>
                   The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> ports do not reject authorized devices and devices with
                   authorized protocols as per the Peripheral Device Connection Policy<a id="period_201" href="#period_201">. </a><ol>
                     <li>Ensure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off<a id="period_202" href="#period_202">. </a></li>
@@ -1078,8 +1062,7 @@ The following sections list Common Criteria and technology terms used in this do
                     <li>Speak into the microphone<a id="period_210" href="#period_210">. </a>Verify that the connected computer picks up the audio by recording
                   the audio or viewing the microphone audio level<a id="period_211" href="#period_211">. </a></li>
                   </ol>                   
-                </li>
-              </ul></span>
+                </li></ul></span>
             </div></div></div></div></div>         
         
       <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
@@ -1173,55 +1156,54 @@ The following sections list Common Criteria and technology terms used in this do
             
     <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
     showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">1</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#T.DATA_LEAK">T.DATA_&#8203;LEAK</a>
-		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
+		(from PSDPP)
 	</td><td><a href="#FDP_PDC_EXT.2/AI">FDP_PDC_EXT.2/AI</a></td><td>Mitigates this threat by allowing
             only authorized devices to connect as defined in a specified list<a id="period_238" href="#period_238">. </a></td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AI">FDP_UDF_EXT.1/AI</a></td><td>Mitigates this threat
             by ensuring data transmits unidirectionally between interfaces<a id="period_239" href="#period_239">. </a></td></tr>
 <tr class="major-row"><td rowspan="2"><a href="#T.SIGNAL_LEAK">T.SIGNAL_&#8203;LEAK</a>
-		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
+		(from PSDPP)
 	</td><td><a href="#FDP_PDC_EXT.2/AI">FDP_PDC_EXT.2/AI</a></td><td>Mitigates this threat by allowing
               only authorized devices to connect as defined in a specified list<a id="period_240" href="#period_240">. </a></td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AI">FDP_UDF_EXT.1/AI</a></td><td>Mitigates this threat
               by ensuring data transmits unidirectionally between interfaces<a id="period_241" href="#period_241">. </a></td></tr>
-</table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-bpp-psd" class="indexable" data-level="2">6.1 
-    Protection Profile for Peripheral Sharing Devices</h2><h3 id="contoe-bpp-psd" class="indexable" data-level="3">6.1.1 
+</table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-PSD" class="indexable" data-level="2">6.1 Protection Profile for Peripheral Sharing Devices</h2><h3 id="contoe-PSD" class="indexable" data-level="3">6.1.1 
 	Consistency of TOE Type
       </h3>
         The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines the boundaries of a <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr>&#8212;a device that provides a mechanism for securely connecting
         a set of peripherals to one or more attached computers<a id="period_242" href="#period_242">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module builds on this by defining
         functional capabilities that are specific to audio input devices<a id="period_243" href="#period_243">. </a>One of the functions of the device must be
         the ability for it to act as an audio input device<a id="period_244" href="#period_244">. </a>The requirements of this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> do not prevent a conformant
-        <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> from implementing mandatory requirements of the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_245" href="#period_245">. </a>      <h3 id="consecprob-bpp-psd" class="indexable" data-level="3">6.1.2 
+        <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> from implementing mandatory requirements of the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_245" href="#period_245">. </a>      <h3 id="consecprob-PSD" class="indexable" data-level="3">6.1.2 
 	Consistency of Security Problem Definition
-      </h3><table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">2</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
+      </h3><table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">2</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.DATA_LEAK">T.DATA_LEAK</a></td><td>
         This threat is from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, thus no conflict exists<a id="period_246" href="#period_246">. </a>      </td></tr><tr><td><a href="#T.SIGNAL_LEAK">T.SIGNAL_LEAK</a></td><td>
-        This threat is from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, thus no conflict exists<a id="period_247" href="#period_247">. </a>      </td></tr></table><h3 id="conobj-bpp-psd" class="indexable" data-level="3">6.1.3 
+        This threat is from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, thus no conflict exists<a id="period_247" href="#period_247">. </a>      </td></tr></table><h3 id="conobj-" class="indexable" data-level="3">6.1.3 
 			Consistency of OE Objectives
 		</h3><p>
-        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s operational environment<a id="period_248" href="#period_248">. </a>      </p><h3 id="conreq-bpp-psd" class="indexable" data-level="3">6.1.4 
+        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s operational environment<a id="period_248" href="#period_248">. </a>      </p><h3 id="conreq-" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
-      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are needed to support
+      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> that are needed to support
       Audio Input Device functionality<a id="period_249" href="#period_249">. </a>      This is considered to be consistent because the functionality provided by the
-      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is being used for its intended purpose<a id="period_250" href="#period_250">. </a>      
+      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> is being used for its intended purpose<a id="period_250" href="#period_250">. </a>      
           The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also identifies a number of modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
-          <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
+          <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr>
           that are used entirely to provide functionality for
 	  Audio Input Device<a id="period_251" href="#period_251">. </a>        
           The rationale for why this does not conflict with the claims
       defined by the
-      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are as follows:
-      <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">3</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
+      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> are as follows:
+      <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">3</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a></td><td>
               This refined <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> accounts for analog and electrical signals which are not listed
               in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_252" href="#period_252">. </a>            </td></tr><tr><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a></td><td>
             This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is not modified, but it references Appendix E which is modified in this
             <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module to apply to audio input devices which are not listed in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_253" href="#period_253">. </a>          </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
-	      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base<a id="period_254" href="#period_254">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FDP_PDC_EXT.2/AI">FDP_PDC_EXT.2/AI</a></td><td>
+	      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> is the base<a id="period_254" href="#period_254">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FDP_PDC_EXT.2/AI">FDP_PDC_EXT.2/AI</a></td><td>
             This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the devices that are authorized by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_255" href="#period_255">. </a>This is
             dependent on the other <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Modules that are claimed in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_256" href="#period_256">. </a>The
             Base&#8208;<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is written specifically not to discuss the supported device types,
@@ -1315,7 +1297,7 @@ The following sections list Common Criteria and technology terms used in this do
       </ul>
     
   <h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">5</span></span>: Acronyms
-		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
+		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_base PP" data-plural="base PPs"><abbr class="dyn-abbr"><a href="#abbr_base PP">base PP</a></abbr></span></td><td><span id="long_abbr_base PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td></tr>
 <tr><td><span class="term" id="abbr_cPP" data-plural="cPPs"><abbr class="dyn-abbr"><a href="#abbr_cPP">cPP</a></abbr></span></td><td><span id="long_abbr_cPP">Collaborative Protection Profile</span></td></tr>
@@ -1349,10 +1331,12 @@ The following sections list Common Criteria and technology terms used in this do
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
                  Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_291" href="#period_291">. </a></li>
-          </ul></span></td></tr><tr><td><span id="bibCESG">[CESG]</span></td><td><span class="description">CESG - <a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End
+          </ul></span></td></tr><tr><td><span id="bibERRv12">[ERR]</span></td><td><span class="description"><a href="https://www.commoncriteriaportal.org/files/ccfiles/CCMB-2025-001-v1_2-Errata_Interpretation_CC_CEM_2022.pdf">
+              Errata and Interpretation for CC:2022 (Release 1) and CEM:2022 (Release 1), Version 1.2</a>, 
+			  CCMB-2025-02-001, 15 October 2025<a id="period_292" href="#period_292">. </a>        </span></td></tr><tr><td><span id="bibCESG">[CESG]</span></td><td><span class="description">CESG - <a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End
       User Devices Security and Configuration Guidance</a></span></td></tr><tr><td><span id="bibCSA">[CSA]</span></td><td><span class="description">
         <a href="http://csrc.nist.gov/groups/SMA/ispab/documents/csa_87.txt">Computer Security Act
-      of 1987</a>, H.R<a id="period_292" href="#period_292">. </a>145, June 11, 1987<a id="period_293" href="#period_293">. </a></span></td></tr><tr><td><span id="bibOMB">[OMB]</span></td><td><span class="description">
+      of 1987</a>, H.R<a id="period_293" href="#period_293">. </a>145, June 11, 1987<a id="period_294" href="#period_294">. </a></span></td></tr><tr><td><span id="bibOMB">[OMB]</span></td><td><span class="description">
         <a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2006/m06-19.pdf">Reporting Incidents Involving Personally Identifiable Information and Incorporating the
         Cost for Security in Agency Information Technology Investments</a>, OMB M-06-19, July
-      12, 2006<a id="period_294" href="#period_294">. </a></span></td></tr></table></body></html>
+      12, 2006<a id="period_295" href="#period_295">. </a></span></td></tr></table></body></html>
