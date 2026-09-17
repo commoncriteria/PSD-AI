@@ -165,7 +165,15 @@
       <cc-pt3-conf>conformant</cc-pt3-conf> 
       <cc-pp-conf/>
       <cc-pp-config-with>
-        <PP-cc-ref>Protection Profile for Peripheral Sharing Devices, Version 5.0</PP-cc-ref>
+        <PP-cc-ref>
+			<cc-doc-ref id="PSD">
+				<git>
+					<url>https://github.com/commoncriteria/PSD</url>
+					<branch>main</branch>
+				</git>
+				<url>https://niap-ccevs.org/protectionprofiles/412</url>			
+			</cc-doc-ref>		
+		</PP-cc-ref>
       </cc-pp-config-with>        
       <cc-pkg-claim/>
     </CClaimsInfo>
@@ -180,7 +188,7 @@
     <sec:Threats>      
       <threats>
         <threat name="T.DATA_LEAK">
-          <from base="bpp-psd"/>
+          <from base="PSD"/>
           <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
           <addressed-by>FDP_PDC_EXT.2/AI</addressed-by><rationale>Mitigates this threat by allowing
             only authorized devices to connect as defined in a specified list.</rationale>
@@ -189,7 +197,7 @@
         </threat>
         
           <threat name="T.SIGNAL_LEAK">
-            <from base="bpp-psd"/>
+            <from base="PSD"/>
             <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
             <addressed-by>FDP_PDC_EXT.2/AI</addressed-by><rationale>Mitigates this threat by allowing
               only authorized devices to connect as defined in a specified list.</rationale>
@@ -220,13 +228,7 @@
   
   <sec:Security_Requirements>
     <comment>Need to add URLs once created</comment>
-    <base-pp id="bpp-psd" name="Peripheral Sharing Devices" product="Device" short="PSD" version="5.0">
-      
-      <git>
-        <url>https://github.com/commoncriteria/ai</url>
-        <branch>main</branch>
-      </git>
-      <url>https://github.com/commoncriteria/psd</url>
+    <base-pp ref="PSD">
       
       <sec-func-req-dir>
         When a TOE claims compliance to this PP‐Module, it is necessary to make claims in the PSD PP
